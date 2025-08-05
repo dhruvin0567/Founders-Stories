@@ -8,6 +8,7 @@ const BlogCard = ({
   blogTitle,
   blogDescription,
   categories = [],
+  isFirst = false,
 }) => {
   const navigate = useNavigate();
 
@@ -24,6 +25,7 @@ const BlogCard = ({
             src={blogImg}
             className="card-img-top custom-blog-img"
             alt="Post Title"
+            loading={isFirst ? "eager" : "lazy"}
           />
         </a>
 
