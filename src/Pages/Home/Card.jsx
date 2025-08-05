@@ -33,7 +33,7 @@ const Card = () => {
         {!selectedCategory && <h3 className="card-title">All Articles</h3>}
 
         <div className="row">
-          {filteredBlogs.map((item) => (
+          {filteredBlogs.map((item, index) => (
             <BlogCard
               key={item.id}
               blogImg={item.blogImg}
@@ -42,6 +42,7 @@ const Card = () => {
               blogDescription={item.blogDescription}
               categories={item.categories}
               onCategoryClick={handleCategoryClick}
+              delay={index * 100}
             />
           ))}
         </div>
