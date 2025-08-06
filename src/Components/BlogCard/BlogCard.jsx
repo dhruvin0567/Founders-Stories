@@ -51,7 +51,7 @@ const BlogCard = ({
         <div className="card-body px-0 custom-card-body">
           <p className="custom-post-meta mb-1">{blogDate}</p>
 
-          <h5 className="custom-blog-title mb-2">
+          <h5 className="custom-blog-title mt-2 mb-3">
             <a href={navigationLink} className="stretched-link">
               {blogTitle}
             </a>

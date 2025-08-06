@@ -29,8 +29,10 @@ const Card = () => {
 
   return (
     <>
-      <div className="tag-container container">
-        {!selectedCategory && <h3 className="card-title">All Articles</h3>}
+      <div className="container custom-blog-main-container">
+        {!selectedCategory && (
+          <h3 className="custom-main-title">All Articles</h3>
+        )}
 
         <div className="row">
           {filteredBlogs.map((item, index) => (
