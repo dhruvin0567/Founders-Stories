@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "/public/img/logo/logo.webp";
+import logo from "/img/logo/logo.webp";
 
 const Header = () => {
   const formLink =

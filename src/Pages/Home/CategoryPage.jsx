@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BlogCard from "../../Components/BlogCard/BlogCard";
+import Pagination from "../../Components/Common/Pagination";
 import axios from "axios";
 
 const CategoryPage = () => {
   const { categoryName } = useParams();
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 6;
 
   const fetchingData = async () => {
     try {
@@ -16,9 +19,22 @@ const CategoryPage = () => {
     }
   };
 
+  const formatCategoryName = (slug) => {
+    if (!slug) return "";
+    return slug
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   useEffect(() => {
     fetchingData();
   }, []);
+
+  // Reset to page 1 if category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [categoryName]);
 
   const filteredBlogs = data.filter((item) =>
     item.categories.some(
@@ -28,11 +44,21 @@ const CategoryPage = () => {
     )
   );
 
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+  const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
+
   return (
-    <div className="tag-container container">
+    <div className="custom-blog-main-container container">
+      {/* Dynamic heading */}
+      <h3 className="custom-main-title">
+        {categoryName ? `${formatCategoryName(categoryName)}` : "All Articles"}
+      </h3>
+
       <div className="row">
-        {filteredBlogs.length > 0 ? (
-          filteredBlogs.map((item) => (
+        {currentBlogs.length > 0 ? (
+          currentBlogs.map((item) => (
             <BlogCard
               key={item.id}
               blogImg={item.blogImg}
@@ -46,6 +72,14 @@ const CategoryPage = () => {
           <p>No articles found for this category.</p>
         )}
       </div>
+
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      )}
     </div>
   );
 };

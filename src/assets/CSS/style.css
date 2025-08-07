@@ -218,6 +218,7 @@ img.navbar-brand {
 .custom-tags span:hover {
   background-color: black !important;
   color: white !important;
+  border: 2px solid black !important;
 }
 
 .author-section .col-lg-6 {
@@ -300,6 +301,73 @@ footer.entry-footer a :hover {
 .custom-pagination {
   width: 100% !important;
   /* border: 2px solid !important; */
+}
+
+/* Container for pagination */
+.custom-pagination-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 1rem !important;
+}
+
+/* Tighter numbers group */
+.custom-pagination {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Tighter number spacing */
+.custom-pagination .page-item {
+  margin: 0 2px !important;
+}
+
+.custom-pagination .page-link {
+  padding: 4px 10px !important;
+  min-width: 32px !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  border: 1px solid #ccc !important;
+}
+
+/* Active page style */
+.custom-pagination .page-item.active .page-link {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Prev/Next button styles */
+.prev-next {
+  padding: 8px 14px !important;
+  border-radius: 12px !important;
+  background-color: #f1f1f1 !important;
+  border: 1px solid #ddd !important;
+  color: #333 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out !important;
+  font-weight: 500 !important;
+}
+
+.prev-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prev-next:hover {
+  background-color: #ffffff !important;
+  color: black !important;
+}
+
+.prev-next:active {
+  background-color: #000000 !important;
+  color: white !important;
+  border-color: #000000 !important;
 }
 
 section.tabs-wrap {
@@ -662,8 +730,8 @@ img.hero {
 
 .pagination {
   width: 100% !important;
-  margin-top: 30px !important;
-  justify-content: space-between !important;
+  margin: 30px 0px !important;
+  justify-content: space-between;
   display: flex !important;
   flex-wrap: wrap !important;
 }
@@ -826,7 +894,12 @@ a.btn.btn-outline {
     font-size: 1rem !important;
   }
 }
-
+/* @media screen and (max-width: 576px) {
+  .prev-next,
+  .pagination .page-item .page-link {
+    padding: 6px 10px !important;
+  }
+} */
 @media screen and (max-width: 480px) {
   img.navbar-brand {
     max-width: 180px !important;

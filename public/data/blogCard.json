@@ -52,5 +52,59 @@
     "blogTitle": "Invite Us",
     "blogDescription": "Hello, Hope you’re doing well! We recently shared a story from our conversation with Harshal Trivedi (Tusker AI), and it reached 12,000+ impressions on LinkedIn,…",
     "categories": ["Meet Up"]
+  },
+  {
+    "id": 7,
+    "navigationLink": "#",
+    "blogImg": "/img/blogImages/blogImage1.png",
+    "blogDate": "Harsh Shah • June 24, 2025",
+    "blogTitle": "From Failed Plugins to 800K+ Users: How Sagar Patel Quietly Built a WordPress Empire",
+    "blogDescription": "This week, Manan Shah and I had the privilege of sitting down with Sagar Patel, A humble visionary who turned a $7 freelancing gig into…",
+    "categories": ["Meet Up"]
+  },
+  {
+    "id": 8,
+    "navigationLink": "#",
+    "blogImg": "/img/blogImages/blogImage2.png",
+    "blogDate": "Harsh Shah • June 6, 2025",
+    "blogTitle": "How Mehul Built a ₹22 Cr/year Company After Dropping Out of College",
+    "blogDescription": "This Week, I had the privilege of catching up with Mr. Mehul, founder of Say Solar. What began as a casual coffee conversation turned into…",
+    "categories": ["Meet Up"]
+  },
+  {
+    "id": 9,
+    "navigationLink": "#",
+    "blogImg": "/img/blogImages/blogImage3.png",
+    "blogDate": "Harsh Shah • May 24, 2025",
+    "blogTitle": "Founder Stories: A Fearless Vision with Harshal Trivedi, Founder of Tusker AI",
+    "blogDescription": "  This week, Manan Shah and I had the privilege of sitting down with someone I’ve admired for over 15 years — Harshal Trivedi, the…",
+    "categories": ["Meet Up"]
+  },
+  {
+    "id": 10,
+    "navigationLink": "#",
+    "blogImg": "/img/blogImages/blogImage4.png",
+    "blogDate": "Harsh Shah • May 24, 2025",
+    "blogTitle": "Founders Stories: It was supposed to be just another quick meetup.",
+    "blogDescription": "",
+    "categories": ["Events", "Meet Up"]
+  },
+  {
+    "id": 11,
+    "navigationLink": "#",
+    "blogImg": "/img/blogImages/blogImage5.png",
+    "blogDate": "Harsh Shah • April 18, 2025",
+    "blogTitle": "How GetUnstuck 2025 Sparked an AI Mindshift in Ahmedabad’s Tech Scene",
+    "blogDescription": "",
+    "categories": ["Events"]
+  },
+  {
+    "id": 12,
+    "navigationLink": "#",
+    "blogImg": "/img/blogImages/blogImage6.png",
+    "blogDate": "Harsh Shah • March 18, 2025",
+    "blogTitle": "Invite Us",
+    "blogDescription": "Hello, Hope you’re doing well! We recently shared a story from our conversation with Harshal Trivedi (Tusker AI), and it reached 12,000+ impressions on LinkedIn,…",
+    "categories": ["Meet Up"]
   }
 ]
