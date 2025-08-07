@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const BlogCard = ({
-  navigationLink,
+  slug,
   blogImg,
   blogDate,
   blogTitle,
@@ -15,16 +15,20 @@ const BlogCard = ({
 }) => {
   const navigate = useNavigate();
 
-  const handleTagClick = (category) => {
-    const slug = category.toLowerCase().replace(/\s+/g, "-");
-    navigate(`/category/${slug}`);
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
+  const handleNavigate = () => {
+    if (slug) {
+      navigate(`/blog/${slug}`);
+    }
   };
 
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
+  const handleTagClick = (category) => {
+    const tagSlug = category.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/category/${tagSlug}`);
+  };
 
   return (
     <div
@@ -36,9 +40,11 @@ const BlogCard = ({
       data-aos-easing="ease-in-out"
     >
       <div className="card border-0 custom-post-card h-100">
-        <a
-          href={navigationLink}
+        {/* Blog Image Clickable */}
+        <div
           className="blog-img-wrapper d-block overflow-hidden"
+          onClick={handleNavigate}
+          style={{ cursor: "pointer" }}
         >
           <img
             src={blogImg}
@@ -46,19 +52,23 @@ const BlogCard = ({
             alt={blogTitle}
             loading={isFirst ? "eager" : "lazy"}
           />
-        </a>
+        </div>
 
         <div className="card-body px-0 custom-card-body">
           <p className="custom-post-meta mb-1">{blogDate}</p>
 
-          <h5 className="custom-blog-title mt-2 mb-3">
-            <a href={navigationLink} className="stretched-link">
-              {blogTitle}
-            </a>
+          {/* Blog Title Clickable */}
+          <h5
+            className="custom-blog-title mt-2 mb-3"
+            onClick={handleNavigate}
+            style={{ cursor: "pointer" }}
+          >
+            {blogTitle}
           </h5>
 
           <p className="card-text custom-post-text">{blogDescription}</p>
 
+          {/* Blog Categories */}
           {categories.length > 0 && (
             <div className="custom-tags mt-2">
               {categories.map((category, index) => (

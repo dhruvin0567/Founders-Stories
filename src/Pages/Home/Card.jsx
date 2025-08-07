@@ -45,6 +45,7 @@ const Card = () => {
         {currentBlogs.map((item, index) => (
           <BlogCard
             key={item.id}
+            slug={item.slug}
             blogImg={item.blogImg}
             blogDate={item.blogDate}
             blogTitle={item.blogTitle}

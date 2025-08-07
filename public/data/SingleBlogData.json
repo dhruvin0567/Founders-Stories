@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "slug": "how-getunstuck-2025-sparked-an-ai-mindshift-in-ahmedabads-tech-scene",
+  "blogTitle": "How GetUnstuck 2025 Sparked an AI Mindshift in Ahmedabad’s Tech Scene",
+  "blogDescription": "",
+  "blogDate": "Harsh Shah • April 18, 2025",
+  "categories": ["Events"],
+  "blogImg": "/img/blogImages/blogImage5.png",
+  "blogmainImage": "https://founderstories.org/wp-content/uploads/2025/04/Ahmedabad-ai-tech.png",
+  "blogImageDescription": "How GetUnstuck 2025 Sparked an AI Mindshift in Ahmedabad’s Tech Scene",
+
+  "tabsData": [
+    {
+      "id": "section-1",
+      "title": "What an Eye-Opening Experience!",
+      "content": "<p>Last week, I had the opportunity to attend GetUnstuck 2025—Ahmedabad’s first-ever Advanced AI Conference, exclusively curated for IT Services CXOs. This wasn’t just another buzzword-filled tech summit. It was a transformative gathering that delivered real, actionable insights into how Artificial Intelligence is actively reshaping the future of business operations.</p><p>&nbsp;</p><p>From interactive workshops to brilliant keynotes, every moment of this event had one thing in common: clarity in action.</p>"
+    },
+    {
+      "id": "section-2",
+      "title": "3 Game-Changing Sessions That Stood Out",
+      "content": "<h4><b>Ronik Patel: The AI Movement is Now</b></h4><p>He compared today’s AI revolution to the early days of the Internet. His insights made it crystal clear-AI is no longer optional. His energy and clarity made him one of the most inspiring voices of the day.</p><p>&nbsp;</p><h4><b>Khushbu Doshi: Frameworks, Not Fluff</b></h4><p>She shared practical frameworks with real-time examples of how AI is already cutting costs by 15–20% for companies, while improving operational efficiency. It was like a cheat sheet for implementing AI in your own business, minus the jargon.</p><p>&nbsp;</p><h4><b>Darshan Dagli: Build What Clients Actually Need</b></h4><p>He reminded us that full automation doesn’t have to be the end goal from Day 1. Instead, he emphasized the power of small, progressive AI wins—solutions that solve real problems today and scale over time.</p><p>&nbsp;</p>"
+    },
+    {
+      "id": "section-3",
+      "title": "Workshops That Mattered",
+      "content": "<p> The hands-on sessions were nothing short of goldmines. I walked away with: </p><ul><li>Quick AI wins that we can implement at Codersh Web Services immediately</li><li>Clarity on turning internal AI experiments into client-facing services</li><li>Practical steps to automate small tasks and scale smartly</li></ul>"
+    },
+    {
+      "id": "section-4",
+      "title": "Gratitude Where It’s Due",
+      "content": "<p>A huge shoutout to Manish Dudharejia and the entire team behind GetUnstuck 2025. You didn’t just host an event, you shifted mindsets. I walked out of the venue not only inspired but equipped with actual plans, not just vague ideas.</p>"
+    },
+    {
+      "id": "section-5",
+      "title": "Final Thought",
+      "content": "<p>If AI felt like a buzzword before, GetUnstuck 2025 made it feel like a toolbox. And we’re now ready to build.</p>"
+    }
+  ],
+
+  "authors": [
+    {
+      "name": "Harsh Shah",
+      "image": "https://secure.gravatar.com/avatar/d97ffcf90bb9c9ae049a82b7163961810b2838454e586767e79994bb5139eb96?s=100&d=mm&r=g",
+      "description": "<p>Founder & CEO – Codersh Web Services. </p></br><p> Harsh Shah is the founder of Codersh Web Services, an IT company serving clients across the USA and UK for the past 6 years. Known for his calm leadership and sharp business instincts, Harsh leads business development and client success with a vision rooted in innovation and growth. His passion for cutting-edge technology, storytelling, and founder journeys drives the Founder Stories movement. Beyond work, he enjoys exploring new places, reading tech insights, and staying active through sports and adventure.</p>"
+    },
+    {
+      "name": "",
+      "image": "https://secure.gravatar.com/avatar/?s=100&d=mm&r=g",
+      "description": ""
+    }
+  ]
+}
