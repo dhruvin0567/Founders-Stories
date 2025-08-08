@@ -58,14 +58,16 @@ const CategoryPage = () => {
 
       <div className="row">
         {currentBlogs.length > 0 ? (
-          currentBlogs.map((item) => (
+          currentBlogs.map((item, index) => (
             <BlogCard
               key={item.id}
+              slug={item.slug}
               blogImg={item.blogImg}
               blogDate={item.blogDate}
               blogTitle={item.blogTitle}
               blogDescription={item.blogDescription}
               categories={item.categories}
+              delay={index * 100}
             />
           ))
         ) : (

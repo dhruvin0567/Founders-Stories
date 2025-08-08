@@ -3,6 +3,7 @@ import Layout from "../Components/Layout/Layout";
 import Home from "../Pages/Home/Home";
 import CategoryPage from "../Pages/Home/CategoryPage";
 import SingleBlogPage from "../Pages/SingleBlog/SingleBlogPage";
+import NotFound from "../Pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -18,8 +19,12 @@ export const router = createBrowserRouter([
         element: <CategoryPage />,
       },
       {
-        path: "/blog/:slug",
+        path: "blog/:slug",
         element: <SingleBlogPage />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

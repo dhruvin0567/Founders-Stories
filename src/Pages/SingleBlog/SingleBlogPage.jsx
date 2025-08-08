@@ -10,13 +10,40 @@ const SingleBlogTemplateWrapper = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("/data/SingleBlogData.json");
-      const blog = response.data;
-
-      if (blog.slug !== slug) {
+      // First try to fetch from the blog cards to find the matching slug
+      const cardsResponse = await axios.get("/data/blogCard.json");
+      const blogCards = cardsResponse.data;
+      const matchingBlog = blogCards.find(blog => blog.slug === slug);
+      
+      if (!matchingBlog) {
         setError("Blog not found.");
+        return;
+      }
+      
+      // Then fetch the detailed blog data
+      const detailResponse = await axios.get("/data/SingleBlogData.json");
+      const blogDetail = detailResponse.data;
+      
+      // Use the detailed data if available, otherwise use the card data
+      if (blogDetail.slug === slug) {
+        setData(blogDetail);
       } else {
-        setData(blog);
+        // Create a simplified version from the card data
+        setData({
+          ...matchingBlog,
+          blogmainImage: matchingBlog.blogImg,
+          blogImageDescription: matchingBlog.blogTitle,
+          tabsData: [{
+            id: "section-1",
+            title: "Content",
+            content: `<p>${matchingBlog.blogDescription || "No content available yet."}</p>`
+          }],
+          authors: [{
+            name: matchingBlog.blogDate.split("•")[0].trim(),
+            image: "https://secure.gravatar.com/avatar/d97ffcf90bb9c9ae049a82b7163961810b2838454e586767e79994bb5139eb96?s=100&d=mm&r=g",
+            description: "<p>Author of this blog post.</p>"
+          }]
+        });
       }
     } catch (err) {
       console.error("Error fetching blog data:", err);
