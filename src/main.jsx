@@ -7,6 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 // CSS
 import "../src/assets/CSS/style.css";
+import "../src/assets/CSS/secondtemplate.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

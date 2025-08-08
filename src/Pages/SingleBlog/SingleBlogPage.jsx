@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleBlogTemplate from "../../Components/SingleBlog/SingleBlogTemplate";
+import SingleBlogTemplateTwo from "../../Components/SingleBlog/SingleBlogTemplateTwo";
 import axios from "axios";
 
 const SingleBlogTemplateWrapper = () => {
@@ -20,17 +21,50 @@ const SingleBlogTemplateWrapper = () => {
         return;
       }
       
-      // Then fetch the detailed blog data
-      const detailResponse = await axios.get("/data/SingleBlogData.json");
-      const blogDetail = detailResponse.data;
+      let foundDetailedBlog = false;
       
-      // Use the detailed data if available, otherwise use the card data
-      if (blogDetail.slug === slug) {
-        setData(blogDetail);
-      } else {
-        // Create a simplified version from the card data
+      // Try to fetch from SingleBlogDataTwo.json first
+      try {
+        const detailResponseTwo = await axios.get("/data/SingleBlogDataTwo.json");
+        const blogDetailsTwo = detailResponseTwo.data;
+        const matchingBlogTwo = blogDetailsTwo.find(blog => blog.slug === slug);
+        
+        if (matchingBlogTwo) {
+          setData({
+            ...matchingBlogTwo,
+            layoutType: matchingBlogTwo.layoutType || "blog2"
+          });
+          foundDetailedBlog = true;
+          return;
+        }
+      } catch (error) {
+        console.log("Error fetching or processing SingleBlogDataTwo.json:", error);
+      }
+      
+      // Then try to fetch from the original SingleBlogData.json
+      try {
+        const detailResponse = await axios.get("/data/SingleBlogData.json");
+        const blogDetail = detailResponse.data;
+        
+        // Use the detailed data if available
+        if (blogDetail.slug === slug) {
+          setData({
+            ...blogDetail,
+            layoutType: blogDetail.layoutType || "blog1"
+          });
+          foundDetailedBlog = true;
+          return;
+        }
+      } catch (error) {
+        console.log("Error fetching or processing SingleBlogData.json:", error);
+      }
+      
+      // If no detailed blog was found, use the card data as fallback
+      if (!foundDetailedBlog) {
+        console.log("Using card data as fallback for slug:", slug);
         setData({
           ...matchingBlog,
+          layoutType: "blog1",
           blogmainImage: matchingBlog.blogImg,
           blogImageDescription: matchingBlog.blogTitle,
           tabsData: [{
@@ -39,7 +73,7 @@ const SingleBlogTemplateWrapper = () => {
             content: `<p>${matchingBlog.blogDescription || "No content available yet."}</p>`
           }],
           authors: [{
-            name: matchingBlog.blogDate.split("•")[0].trim(),
+            name: matchingBlog.blogDate.split("•")[0].trim() || "Author",
             image: "https://secure.gravatar.com/avatar/d97ffcf90bb9c9ae049a82b7163961810b2838454e586767e79994bb5139eb96?s=100&d=mm&r=g",
             description: "<p>Author of this blog post.</p>"
           }]
@@ -58,13 +92,22 @@ const SingleBlogTemplateWrapper = () => {
   if (error) return <div>{error}</div>;
   if (!data) return <div>Loading blog...</div>;
 
-  return (
+  // Render the appropriate template based on layoutType
+  return data.layoutType === "blog2" ? (
+    <SingleBlogTemplateTwo
+      blogTitle={data.blogTitle}
+      blogImg={data.blogImg}
+      blogDate={data.blogDate}
+      blogData={data.blogData}
+      categories={data.categories || []}
+    />
+  ) : (
     <SingleBlogTemplate
       blogTitle={data.blogTitle}
-      blogmainImage={data.blogImg} // Assuming this is your main image
-      blogImageDescription={data.blogDescription} // You can map as needed
-      tabsData={data.tabsData || []} // default empty if tabsData doesn't exist
-      authors={data.authors || []} // default empty if authors doesn't exist
+      blogmainImage={data.blogImg || data.blogmainImage}
+      blogImageDescription={data.blogDescription}
+      tabsData={data.tabsData || []}
+      authors={data.authors || []}
       blogDescription={data.blogDescription}
     />
   );

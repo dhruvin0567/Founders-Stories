@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="container py-4">
+      <main className="">
         <Outlet />
       </main>
       <Footer />

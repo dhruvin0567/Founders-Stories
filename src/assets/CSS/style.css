@@ -528,7 +528,7 @@ h1.blog-title {
 }
 
 img.hero {
-  max-height: 580px !important;
+  max-height: 100% !important;
   object-fit: cover !important;
   width: 100% !important;
 }
@@ -996,4 +996,13 @@ a.btn.btn-outline {
 
 .transition-scale:hover {
   transform: scale(1.05) !important;
+}
+
+/* blockqoute css */
+blockquote {
+  border-left: 10px solid #a2a0a0 !important;
+  background-color: #f7f7f7 !important;
+  padding: 15px !important;
+  width: auto !important;
+  margin: 10px 0px !important;
 }
