@@ -18,12 +18,10 @@ const SingleBlogTemplateWrapper = () => {
       if (wpResponse.data && wpResponse.data.length > 0) {
         const wpPost = wpResponse.data[0];
 
-        // Decide layoutType
         const layoutType =
           wpPost.acf?.layoutType ||
           (wpPost.content.rendered.length > 3000 ? "blog2" : "blog1");
 
-        // Extract categories as objects (name + slug)
         const categories =
           wpPost._embedded?.["wp:term"]
             ?.flat()
