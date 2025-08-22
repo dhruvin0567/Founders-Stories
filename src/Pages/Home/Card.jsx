@@ -15,7 +15,7 @@ const Card = () => {
     try {
       setIsFetching(true);
       const response = await axios.get(
-        "https://founderstories.org/wp-json/wp/v2/posts?per_page=50&_embed"
+        `https://founderstories.org/wp-json/wp/v2/posts?per_page=50&_embed`
       );
 
       const mappedData = response.data.map((item) => ({

@@ -17,7 +17,7 @@ const BlogCard = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ once: true, duration: 400, easing: "ease-out" });
   }, []);
 
   const handleNavigate = () => {
@@ -28,7 +28,7 @@ const BlogCard = ({
 
   const handleTagClick = (category) => {
     const tagSlug = category.toLowerCase().replace(/\s+/g, "-");
-    navigate(`/category/${tagSlug}`);
+    navigate(`/category/${tagSlug}`, { state: { categoryName: category } });
   };
 
   return (
@@ -37,7 +37,7 @@ const BlogCard = ({
       data-aos="fade-up"
       data-aos-offset="100"
       data-aos-delay={delay}
-      data-aos-duration="1000"
+      data-aos-duration="800"
       data-aos-easing="ease-in-out"
     >
       <div className="card border-0 custom-post-card h-100">
