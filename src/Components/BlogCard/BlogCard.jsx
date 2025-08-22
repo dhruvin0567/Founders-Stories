@@ -57,7 +57,7 @@ const BlogCard = ({
         </div>
 
         <div className="card-body px-0 custom-card-body">
-          <p className="custom-post-meta mb-1">{blogDate}</p>
+          <p className="custom-post-meta mb-1">Harsh Shah • {blogDate}</p>
 
           {/* Blog Title Clickable */}
           <h5

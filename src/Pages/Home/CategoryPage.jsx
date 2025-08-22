@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BlogCard from "../../Components/BlogCard/BlogCard";
+import ImageWithLoader from "../../Components/Common/ImageWithLoader";
 import Pagination from "../../Components/Common/Pagination";
 import axios from "axios";
 
@@ -31,7 +32,6 @@ const CategoryPage = () => {
     fetchingData();
   }, []);
 
-  // Reset to page 1 if category changes
   useEffect(() => {
     setCurrentPage(1);
   }, [categoryName]);
@@ -68,6 +68,7 @@ const CategoryPage = () => {
               blogDescription={item.blogDescription}
               categories={item.categories}
               delay={index * 100}
+              isFirst={index === 0}
             />
           ))
         ) : (

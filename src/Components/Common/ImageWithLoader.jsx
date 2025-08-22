@@ -8,6 +8,7 @@ const ImageWithLoader = ({
   onClick,
   style,
   placeholderHeight = 200,
+  fallbackSrc = "https://via.placeholder.com/600x400?text=Image+not+available",
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -51,7 +52,7 @@ const ImageWithLoader = ({
     };
   }, [eager, isInView]);
 
-  const showLoader = !isLoaded || hasError;
+  const showLoader = !isLoaded && !hasError;
 
   return (
     <div className="image-loader-wrapper" onClick={onClick} ref={containerRef}>
@@ -66,21 +67,35 @@ const ImageWithLoader = ({
         </div>
       )}
 
-      {/* Actual image (kept hidden until loaded) */}
-      <img
-        src={isInView || eager ? src : undefined}
-        alt={alt}
-        className={className}
-        style={{
-          display: isLoaded && !hasError ? "block" : "none",
-          ...(style || {}),
-        }}
-        loading={eager ? "eager" : "lazy"}
-        decoding="async"
-        fetchpriority={eager ? "high" : "auto"}
-        onLoad={() => setIsLoaded(true)}
-        onError={() => setHasError(true)}
-      />
+      {/* Actual image (kept hidden until loaded). On error, show fallback. */}
+      {!hasError && (
+        <img
+          src={isInView || eager ? src : undefined}
+          alt={alt}
+          className={className}
+          style={{
+            display: isLoaded ? "block" : "none",
+            ...(style || {}),
+          }}
+          loading={eager ? "eager" : "lazy"}
+          decoding="async"
+          fetchpriority={eager ? "high" : "auto"}
+          onLoad={() => setIsLoaded(true)}
+          onError={() => setHasError(true)}
+        />
+      )}
+
+      {hasError && (
+        <img
+          src={fallbackSrc}
+          alt={alt}
+          className={className}
+          style={{ display: "block", ...(style || {}) }}
+          loading="eager"
+          decoding="async"
+          fetchpriority="low"
+        />
+      )}
     </div>
   );
 };
