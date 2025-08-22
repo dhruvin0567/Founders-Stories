@@ -11,76 +11,59 @@ const SingleBlogTemplateWrapper = () => {
 
   const fetchData = async () => {
     try {
-      // First try to fetch from the blog cards to find the matching slug
-      const cardsResponse = await axios.get("/data/blogCard.json");
-      const blogCards = cardsResponse.data;
-      const matchingBlog = blogCards.find(blog => blog.slug === slug);
-      
-      if (!matchingBlog) {
-        setError("Blog not found.");
-        return;
-      }
-      
-      let foundDetailedBlog = false;
-      
-      // Try to fetch from SingleBlogDataTwo.json first
-      try {
-        const detailResponseTwo = await axios.get("/data/SingleBlogDataTwo.json");
-        const blogDetailsTwo = detailResponseTwo.data;
-        const matchingBlogTwo = blogDetailsTwo.find(blog => blog.slug === slug);
-        
-        if (matchingBlogTwo) {
-          setData({
-            ...matchingBlogTwo,
-            layoutType: matchingBlogTwo.layoutType || "blog2"
-          });
-          foundDetailedBlog = true;
-          return;
-        }
-      } catch (error) {
-        console.log("Error fetching or processing SingleBlogDataTwo.json:", error);
-      }
-      
-      // Then try to fetch from the original SingleBlogData.json
-      try {
-        const detailResponse = await axios.get("/data/SingleBlogData.json");
-        const blogDetail = detailResponse.data;
-        
-        // Use the detailed data if available
-        if (blogDetail.slug === slug) {
-          setData({
-            ...blogDetail,
-            layoutType: blogDetail.layoutType || "blog1"
-          });
-          foundDetailedBlog = true;
-          return;
-        }
-      } catch (error) {
-        console.log("Error fetching or processing SingleBlogData.json:", error);
-      }
-      
-      // If no detailed blog was found, use the card data as fallback
-      if (!foundDetailedBlog) {
-        console.log("Using card data as fallback for slug:", slug);
+      const wpResponse = await axios.get(
+        `https://founderstories.org/wp-json/wp/v2/posts?slug=${slug}&_embed`
+      );
+
+      if (wpResponse.data && wpResponse.data.length > 0) {
+        const wpPost = wpResponse.data[0];
+
+        // Decide layoutType
+        const layoutType =
+          wpPost.acf?.layoutType ||
+          (wpPost.content.rendered.length > 3000 ? "blog2" : "blog1");
+
+        // Extract categories as objects (name + slug)
+        const categories =
+          wpPost._embedded?.["wp:term"]
+            ?.flat()
+            .filter((term) => term.taxonomy === "category")
+            .map((c) => ({
+              name: c.name,
+              slug: c.slug,
+            })) || [];
+
         setData({
-          ...matchingBlog,
-          layoutType: "blog1",
-          blogmainImage: matchingBlog.blogImg,
-          blogImageDescription: matchingBlog.blogTitle,
-          tabsData: [{
-            id: "section-1",
-            title: "Content",
-            content: `<p>${matchingBlog.blogDescription || "No content available yet."}</p>`
-          }],
-          authors: [{
-            name: matchingBlog.blogDate.split("•")[0].trim() || "Author",
-            image: "https://secure.gravatar.com/avatar/d97ffcf90bb9c9ae049a82b7163961810b2838454e586767e79994bb5139eb96?s=100&d=mm&r=g",
-            description: "<p>Author of this blog post.</p>"
-          }]
+          blogTitle: wpPost.title.rendered,
+          blogImg:
+            wpPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "",
+          blogDate: new Date(wpPost.date).toLocaleDateString(),
+          blogDescription: wpPost.excerpt.rendered,
+          blogData: wpPost.content.rendered,
+          tabsData: [
+            {
+              id: "section-1",
+              title: "Content",
+              content: wpPost.content.rendered,
+            },
+          ],
+          authors: [
+            {
+              name: wpPost._embedded?.author?.[0]?.name || "Unknown Author",
+              image:
+                wpPost._embedded?.author?.[0]?.avatar_urls?.["96"] ||
+                "https://secure.gravatar.com/avatar/?s=100&d=mm&r=g",
+              description: "<p>Author of this blog post.</p>",
+            },
+          ],
+          categories,
+          layoutType,
         });
+      } else {
+        setError("Blog not found.");
       }
     } catch (err) {
-      console.error("Error fetching blog data:", err);
+      console.error("Error fetching WordPress post:", err);
       setError("An error occurred while loading the blog.");
     }
   };
@@ -92,23 +75,23 @@ const SingleBlogTemplateWrapper = () => {
   if (error) return <div>{error}</div>;
   if (!data) return <div>Loading blog...</div>;
 
-  // Render the appropriate template based on layoutType
   return data.layoutType === "blog2" ? (
     <SingleBlogTemplateTwo
       blogTitle={data.blogTitle}
       blogImg={data.blogImg}
       blogDate={data.blogDate}
       blogData={data.blogData}
-      categories={data.categories || []}
+      categories={data.categories}
     />
   ) : (
     <SingleBlogTemplate
       blogTitle={data.blogTitle}
-      blogmainImage={data.blogImg || data.blogmainImage}
+      blogmainImage={data.blogImg}
       blogImageDescription={data.blogDescription}
-      tabsData={data.tabsData || []}
-      authors={data.authors || []}
+      tabsData={data.tabsData}
+      authors={data.authors}
       blogDescription={data.blogDescription}
+      categories={data.categories}
     />
   );
 };
