@@ -115,24 +115,6 @@ const Card = () => {
       {!selectedCategory && <h3 className="custom-main-title">All Articles</h3>}
 
       <div className="row">
-        {currentBlogs.length === 0 &&
-          Array.from({ length: blogsPerPage }).map((_, idx) => (
-            <div
-              className="col-lg-4 col-sm-6 mb-4 custom-main-post"
-              key={`skeleton-${idx}`}
-            >
-              <div className="card border-0 custom-post-card h-100">
-                <div className="d-block overflow-hidden skeleton-img-block" />
-                <div className="card-body px-0 custom-card-body">
-                  <div className="skeleton-line-light h-14px w-40p mb-12px skeleton-line" />
-                  <div className="skeleton-line h-18px w-90p mb-8px" />
-                  <div className="skeleton-line h-18px w-75p mb-16px" />
-                  <div className="skeleton-line-dark h-14px w-60p" />
-                </div>
-              </div>
-            </div>
-          ))}
-
         {currentBlogs.map((item, index) => (
           <BlogCard
             key={item.id}
