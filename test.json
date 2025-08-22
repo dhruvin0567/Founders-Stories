@@ -1,0 +1,705 @@
+[
+  {
+    "id": 855,
+    "date": "2025-06-24T10:23:59",
+    "date_gmt": "2025-06-24T10:23:59",
+    "guid": {
+      "rendered": "https://founderstories.org/?p=855"
+    },
+    "modified": "2025-06-24T10:47:33",
+    "modified_gmt": "2025-06-24T10:47:33",
+    "slug": "from-failed-plugins-to-800k-users-how-sagar-patel-quietly-built-a-wordpress-empire",
+    "status": "publish",
+    "type": "post",
+    "link": "https://founderstories.org/from-failed-plugins-to-800k-users-how-sagar-patel-quietly-built-a-wordpress-empire/",
+    "title": {
+      "rendered": "From Failed Plugins to 800K+ Users: How Sagar Patel Quietly Built a WordPress Empire"
+    },
+    "content": {
+      "rendered": "\u003Cp\u003E\u003Cstrong\u003EThis week, Manan Shah and I had the privilege of sitting down with Sagar Patel\u003C/strong\u003E,\u003C/p\u003E\n\u003Cp\u003EA humble visionary who turned a $7 freelancing gig into a thriving WordPress powerhouse.\u003C/p\u003E\n\u003Cp\u003EIn a small village near Ahmedabad, a boy without a computer dreamed of building tools that would power websites around the world.\u003C/p\u003E\n\u003Cp\u003EHis parents never finished school. He saved lunch money to browse the internet from cyber cafés. His first online profit? $7.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EToday, that dreamer is none other than the founder of Posimyth Innovations, Sagar Patel.\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EThis is the story of how humble beginnings, curiosity, and quiet conviction built something remarkable.\u003C/p\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Ch2 class=\"header-anchor-post\"\u003EFrom Village Life to the Digital World\u003C/h2\u003E\n\u003Cp\u003ESagar was born in \u003Cstrong\u003ENaroda\u003C/strong\u003E, a village near Ahmedabad. His father was a \u003Cstrong\u003Emilkman and farmer\u003C/strong\u003E. His parents never completed schooling.\u003C/p\u003E\n\u003Cp\u003EDespite limited resources, Sagar’s natural curiosity and love for philosophy shaped his early thinking. He excelled in school but saw his college grades dip, Not from lack of effort, but from exploring beyond the classroom.\u003C/p\u003E\n\u003Cp\u003EHe studied \u003Cstrong\u003EComputer Science (B.E.) at Gujarat Technological University (2010–2013)\u003C/strong\u003E, and didn’t own a personal computer until his third year. Instead, he relied on cyber cafés and his college library to chase his fascination with the digital world.\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E“When you’re hungry to learn, you find a way. No matter where you are.”\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Ch2 class=\"header-anchor-post\"\u003EThe $7 That Started It All\u003C/h2\u003E\n\u003Cp\u003EIn his \u003Cstrong\u003E7th semester\u003C/strong\u003E, Sagar began freelancing, doing small projects late at night. Along with his friend \u003Cstrong\u003ERushi Patel\u003C/strong\u003E, he co-founded \u003Cstrong\u003EINSIGNIA Technolabs\u003C/strong\u003E in 2013.\u003C/p\u003E\n\u003Cp\u003EHe spent nights sending proposals on platforms like Upwork and Freelancer.com\u003C/p\u003E\n\u003Cp\u003EHis first earnings? \u003Cstrong\u003E$7\u003C/strong\u003E. Not just a number, A turning point.\u003C/p\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Ch2 class=\"header-anchor-post\"\u003EDiscovering the Problem in WordPress\u003C/h2\u003E\n\u003Cp\u003EAs he built websites, Sagar encountered WordPress and saw both its promise and its pain:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EPerformance issues\u003C/li\u003E\n\u003Cli\u003ELimited design flexibility\u003C/li\u003E\n\u003Cli\u003EFriction for non-technical users\u003C/li\u003E\n\u003Cli\u003EBloated tools that made simple tasks harder\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EMost plugins didn’t solve real problems. They added noise, not clarity.\u003C/p\u003E\n\u003Cp\u003EThis insight sparked something deeper, A vision to build what creators truly needed.\u003C/p\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Cdiv class=\"captioned-image-container\"\u003E\n\u003Cfigure\u003E\n\u003Cdiv class=\"image2-inset\"\u003E\n\u003Cpicture\u003E\u003Csource srcset=\"https://substackcdn.com/image/fetch/$s_!HJU3!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 424w, https://substackcdn.com/image/fetch/$s_!HJU3!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 848w, https://substackcdn.com/image/fetch/$s_!HJU3!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 1272w, https://substackcdn.com/image/fetch/$s_!HJU3!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 1456w\" type=\"image/webp\" sizes=\"100vw\" /\u003E\u003Cimg loading=\"lazy\" decoding=\"async\" class=\"sizing-normal aligncenter\" src=\"https://substackcdn.com/image/fetch/$s_!HJU3!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png\" sizes=\"auto, 100vw\" srcset=\"https://substackcdn.com/image/fetch/$s_!HJU3!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 424w, https://substackcdn.com/image/fetch/$s_!HJU3!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 848w, https://substackcdn.com/image/fetch/$s_!HJU3!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 1272w, https://substackcdn.com/image/fetch/$s_!HJU3!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png 1456w\" alt=\"\" width=\"1026\" height=\"577\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:819,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:2343018,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://niraj12.substack.com/i/166303670?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ead6955-eb39-4ce7-a3dc-adeb2457513b_1920x1080.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" /\u003E\u003C/picture\u003E\n\u003Cdiv class=\"image-link-expand\"\u003E\n\u003Cdiv class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"\u003E\n\u003Cdiv class=\"pencraft pc-reset icon-container view-image\"\u003E\u003C/div\u003E\n\u003C/div\u003E\n\u003C/div\u003E\n\u003C/div\u003E\n\u003C/figure\u003E\n\u003C/div\u003E\n\u003Ch2 class=\"header-anchor-post\"\u003ELaunching Posimyth, On a Date That Meant More\u003C/h2\u003E\n\u003Cp\u003EOn \u003Cstrong\u003E20th July 2015\u003C/strong\u003E, the anniversary of humankind’s first step on the moon, Sagar launched \u003Cstrong\u003EPosimyth Innovations\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EHis mission was clear:\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E\u003Cstrong\u003E“Empower creators to build better websites without struggling with complex tools.”\u003C/strong\u003E\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cp\u003EThe first product? \u003Cstrong\u003EThe Plus Addons for Elementor\u003C/strong\u003E, A performance-first, user-friendly toolkit that extended Elementor’s potential in powerful new ways.\u003C/p\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Ch2 class=\"header-anchor-post\"\u003EBuilding With Users in Mind\u003C/h2\u003E\n\u003Cp\u003EInstead of competing on features, Sagar focused on:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003ESolving real problems\u003C/li\u003E\n\u003Cli\u003EClean design systems\u003C/li\u003E\n\u003Cli\u003EPerformance optimization\u003C/li\u003E\n\u003Cli\u003EThoughtful onboarding\u003C/li\u003E\n\u003Cli\u003EHuman support and documentation\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EThe result? A growing suite of products loved by creators across the world:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cstrong\u003EThe Plus Addons for Elementor\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003E\u003Cstrong\u003EThe Plus Blocks for Gutenberg\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003E\u003Cstrong\u003ENexter WordPress Theme\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003E\u003Cstrong\u003EA suite of upcoming AI-powered tools\u003C/strong\u003E\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EWith over \u003Cstrong\u003E30,000 active installs\u003C/strong\u003E, Posimyth Innovations is now a trusted name in the WordPress creator economy.\u003C/p\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Ch2 class=\"header-anchor-post\"\u003ELessons from the Journey\u003C/h2\u003E\n\u003Cp\u003ESagar credits his growth to \u003Cstrong\u003Econtinuous learning\u003C/strong\u003E, Through \u003Cstrong\u003EYouTube, podcasts, reading, and networking\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EBut more than knowledge, it’s his mindset that stands out.\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E\u003Cstrong\u003E“If you&#8217;re truly committed and passionate, you can achieve anything.”\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Cbr /\u003E\n“Focus on solving real problems, Not just building cool features.”\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Cbr /\u003E\n“Clear documentation and helpful onboarding matter as much as code.”\u003C/strong\u003E\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cdiv\u003E\n\u003Chr /\u003E\n\u003C/div\u003E\n\u003Ch2\u003E\u003Cstrong\u003EFinal Word: What We Can Learn\u003C/strong\u003E\u003C/h2\u003E\n\u003Cp\u003EFrom a tiny village in Gujarat to building products used by 30,000+ global users, Sagar’s story isn’t about flashy headlines. It’s about quiet consistency and deep clarity.\u003C/p\u003E\n\u003Cp\u003EHe didn’t have the best tools &#8211; he built them.\u003Cbr /\u003E\nHe didn’t follow hype &#8211; he followed purpose.\u003C/p\u003E\n\u003Cp\u003EIn doing so, he didn’t just build plugins.\u003Cbr /\u003E\nHe built confidence, trust, and a better way to create.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Cp\u003E&nbsp;\u003C/p\u003E\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "\u003Cp\u003EThis week, Manan Shah and I had the privilege of sitting down with Sagar Patel, A humble visionary who turned a $7 freelancing gig into a thriving WordPress powerhouse. In a small village near Ahmedabad, a boy without a computer dreamed of building tools that would power websites around the world. His parents never finished [&hellip;]\u003C/p\u003E\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 869,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [12],
+    "tags": [],
+    "class_list": [
+      "post-855",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-meet-up"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/855",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/comments?post=855"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/855/revisions"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/media/869"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/media?parent=855"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/categories?post=855"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/tags?post=855"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 843,
+    "date": "2025-06-06T12:13:00",
+    "date_gmt": "2025-06-06T12:13:00",
+    "guid": {
+      "rendered": "https://founderstories.org/?p=843"
+    },
+    "modified": "2025-06-19T12:37:42",
+    "modified_gmt": "2025-06-19T12:37:42",
+    "slug": "from-college-dropout-to-building-a-%e2%82%b922-crore-annual-revenue-automode-company",
+    "status": "publish",
+    "type": "post",
+    "link": "https://founderstories.org/from-college-dropout-to-building-a-%e2%82%b922-crore-annual-revenue-automode-company/",
+    "title": {
+      "rendered": "How Mehul Built a ₹22 Cr/year Company After Dropping Out of College"
+    },
+    "content": {
+      "rendered": "\u003Cp\u003EThis Week, I had the privilege of catching up with \u003Cstrong\u003EMr.\u003C/strong\u003E \u003Cstrong\u003EMehul\u003C/strong\u003E, founder of \u003Cstrong\u003ESay Solar\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EWhat began as a casual coffee conversation turned into something far deeper — a story not just about building a business, but about \u003Cstrong\u003Etransforming a mindset, overcoming odds, and choosing purpose over shortcuts.\u003C/strong\u003E\u003C/p\u003E\n\u003Ch2\u003EThe Backbencher No One Expected\u003C/h2\u003E\n\u003Cp\u003ELet me take you back to college days.\u003C/p\u003E\n\u003Cp\u003EMehul was never the “model student.”\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EA \u003Cstrong\u003Ebackbencher\u003C/strong\u003E by choice.\u003C/li\u003E\n\u003Cli\u003E\u003Cstrong\u003ELow scores\u003C/strong\u003E and barely scraping by in exams.\u003C/li\u003E\n\u003Cli\u003EHe was \u003Cstrong\u003Edetained in Semester 3\u003C/strong\u003E.\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003ETo most people, that would have written him off. Nobody—not even professors or peers—imagined he’d one day lead a multi-crore business that’s shaping the future of renewable energy in Gujarat.\u003C/p\u003E\n\u003Cp\u003EBut behind those quiet classrooms sat a young man with fire in his gut.\u003C/p\u003E\n\u003Cp\u003EA fire to do something meaningful. To build something that \u003Cem\u003Emattered.\u003C/em\u003E\u003C/p\u003E\n\u003Ch2\u003EBetting on Solar, Not on Shortcuts\u003C/h2\u003E\n\u003Cp\u003EAfter college, while others rushed to land stable jobs, Mehul made a choice that changed everything.\u003C/p\u003E\n\u003Cp\u003EHe saw the rising need — and broken trust — in India’s solar energy market. Especially in Gujarat, a state blessed with sunlight but underserved by reliable solutions.\u003C/p\u003E\n\u003Cp\u003EAnd so, with \u003Cstrong\u003Eno funding, no big brand name, and no safety net\u003C/strong\u003E, Mehul started \u003Cstrong\u003ESay Solar\u003C/strong\u003E — a venture rooted in \u003Cstrong\u003Etrust, transparency, and technology\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EHis goal?\u003Cbr /\u003E\n\u003Cstrong\u003ETo make solar energy accessible and trustworthy for every household.\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003ENot just installations. But education, service, and long-term support.\u003C/p\u003E\n\u003Ch2\u003ENumbers That Tell a Deeper Story\u003C/h2\u003E\n\u003Cp\u003EFast forward to 2025, and Say Solar isn’t just growing — it’s thriving.\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E \u003Cstrong\u003E5000+ solar rooftop installations\u003C/strong\u003E across Gujarat\u003C/li\u003E\n\u003Cli\u003E\u003Cstrong\u003E₹22 Crore turnover\u003C/strong\u003E in FY 2024–25\u003C/li\u003E\n\u003Cli\u003E Fully automated \u003Cstrong\u003ECRM &amp; operations with Zoho\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003E A \u003Cstrong\u003Escalable dealer network\u003C/strong\u003E expanding rapidly\u003C/li\u003E\n\u003Cli\u003E Bold mission: \u003Cstrong\u003ESolarizing 1,00,000 homes by 2030\u003C/strong\u003E\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EThese numbers are impressive, but what stands out more is the philosophy Mehul operates with.\u003C/p\u003E\n\u003Cp\u003EHe doesn’t talk like a salesperson.\u003Cbr /\u003E\nHe speaks like a \u003Cstrong\u003Esystem builder\u003C/strong\u003E, an \u003Cstrong\u003Eeducator\u003C/strong\u003E, a \u003Cstrong\u003Evisionary\u003C/strong\u003E who knows the impact of every solar panel he installs.\u003C/p\u003E\n\u003Ch2\u003EThe Mindset Shift: From Marks to Mission\u003C/h2\u003E\n\u003Cp\u003EThe most inspiring part?\u003C/p\u003E\n\u003Cp\u003EMehul never blames his past.\u003Cbr /\u003E\nNever hides his low scores.\u003Cbr /\u003E\nNever denies the tough start.\u003C/p\u003E\n\u003Cp\u003EInstead, he embraces it because it shaped him.\u003Cbr /\u003E\nHis story is a living example of something we all need to hear more often:\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E\u003Cem\u003E&#8220;Your marks don’t define your mindset.\u003Cbr /\u003E\nYour failures don’t define your future.&#8221;\u003C/em\u003E\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cp\u003EWe’re conditioned to believe success comes to toppers, those who tick every box.\u003Cbr /\u003E\nBut Mehul proves it’s \u003Cstrong\u003Eeffort\u003C/strong\u003E, \u003Cstrong\u003Eresilience\u003C/strong\u003E, and \u003Cstrong\u003Esystems thinking\u003C/strong\u003E that win the long game.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Ch2\u003EFinal Thoughts: A Gujarati Entrepreneur Who’s Leading with Grit\u003C/h2\u003E\n\u003Cp\u003EAs someone who’s known Mehul from the “backbencher days,” I couldn’t be more proud.\u003C/p\u003E\n\u003Cp\u003EHe represents a new kind of founder — not chasing vanity metrics, not flashing investor decks, but \u003Cstrong\u003Ebuilding quietly and boldly\u003C/strong\u003E, with purpose at the center.\u003C/p\u003E\n\u003Cp\u003EAnd if there’s one thing to take away from his journey, it’s this:\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E\u003Cem\u003EBeing average on paper means nothing\u003Cbr /\u003E\nwhen you&#8217;re extraordinary in effort.\u003C/em\u003E\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cp\u003EHere’s to more stories like this — of real founders, real impact, and the quiet revolutions happening in small towns and sunny rooftops across India.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Cp\u003E&nbsp;\u003C/p\u003E\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "\u003Cp\u003EThis Week, I had the privilege of catching up with Mr. Mehul, founder of Say Solar. What began as a casual coffee conversation turned into something far deeper — a story not just about building a business, but about transforming a mindset, overcoming odds, and choosing purpose over shortcuts. The Backbencher No One Expected Let [&hellip;]\u003C/p\u003E\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 847,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [12],
+    "tags": [],
+    "class_list": [
+      "post-843",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-meet-up"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/843",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/comments?post=843"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/843/revisions"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/media/847"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/media?parent=843"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/categories?post=843"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/tags?post=843"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 830,
+    "date": "2025-05-24T12:45:00",
+    "date_gmt": "2025-05-24T12:45:00",
+    "guid": {
+      "rendered": "https://founderstories.org/?p=830"
+    },
+    "modified": "2025-06-06T12:10:22",
+    "modified_gmt": "2025-06-06T12:10:22",
+    "slug": "founder-stories-a-fearless-vision-with-harshal-trivedi-founder-of-tusker-ai",
+    "status": "publish",
+    "type": "post",
+    "link": "https://founderstories.org/founder-stories-a-fearless-vision-with-harshal-trivedi-founder-of-tusker-ai/",
+    "title": {
+      "rendered": "Founder Stories: A Fearless Vision with Harshal Trivedi, Founder of Tusker AI"
+    },
+    "content": {
+      "rendered": "\u003Cp\u003E&nbsp;\u003C/p\u003E\n\u003Ch1\u003E\u003C/h1\u003E\n\u003Cp\u003EThis week, \u003Cstrong\u003EManan Shah\u003C/strong\u003E and I had the privilege of sitting down with someone I’ve admired for over 15 years — \u003Cstrong\u003EHarshal Trivedi\u003C/strong\u003E, the visionary founder of \u003Cstrong\u003ETusker AI\u003C/strong\u003E and the driving force behind \u003Cstrong\u003ESoftvan Pvt. Ltd.\u003C/strong\u003E, now part of the \u003Cstrong\u003ESahana System Group\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EWhat began as a casual coffee conversation turned into a deep dive into tech, mindset, research, and leadership — essentially, a \u003Cstrong\u003Emasterclass in fearless entrepreneurship\u003C/strong\u003E.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Ch2\u003E About the Founder: A Rare Blend of Vision and Discipline\u003C/h2\u003E\n\u003Cp\u003EHarshal Sir is far from your typical tech founder.\u003C/p\u003E\n\u003Cp\u003EWhile most struggle to balance one venture, he:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003ELeads a \u003Cstrong\u003E150+ member software agency\u003C/strong\u003E, Softvan Pvt. Ltd.\u003C/li\u003E\n\u003Cli\u003EBuilt \u003Cstrong\u003ETusker AI\u003C/strong\u003E, a powerful \u003Cstrong\u003Eno-code computer vision platform\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003EIs currently pursuing a \u003Cstrong\u003EPhD at Nirma University\u003C/strong\u003E — yes, you read that right.\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EThis mix of execution, education, and evolution is rare — and exactly what made this conversation unforgettable.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Ch2\u003E What We Discussed: Learnings from a Deep-Tech Trailblazer\u003C/h2\u003E\n\u003Ch3\u003E1. \u003Cstrong\u003EExecuting a Startup Idea the Right Way\u003C/strong\u003E\u003C/h3\u003E\n\u003Cp\u003EHarshal emphasized that launching a tech product is \u003Cstrong\u003Enot just about building\u003C/strong\u003E, but about:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EValidating your idea through \u003Cstrong\u003Esurveys and feedback\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003ESelecting the \u003Cstrong\u003Eright tech stack\u003C/strong\u003E with scalability in mind\u003C/li\u003E\n\u003Cli\u003EAlways anchoring innovation in \u003Cstrong\u003Ereal-world problems\u003C/strong\u003E\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cblockquote\u003E\u003Cp\u003E“Don’t start with code. Start with clarity.”\u003C/p\u003E\u003C/blockquote\u003E\n\u003Ch3\u003E2. \u003Cstrong\u003EThe Mindset of Rapid Tech Adoption\u003C/strong\u003E\u003C/h3\u003E\n\u003Cp\u003ETusker AI thrives in a fast-moving ecosystem — from computer vision to no-code innovation — but Harshal makes it clear:\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E“Speed isn’t about being first. It’s about learning faster than anyone else.”\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cp\u003EHe explained how his team constantly \u003Cstrong\u003Eexperiments, adapts, and delivers\u003C/strong\u003E, helping global clients with cutting-edge yet stable solutions.\u003C/p\u003E\n\u003Ch3\u003E3. \u003Cstrong\u003EThe Role of Networking in Mindset Shaping\u003C/strong\u003E\u003C/h3\u003E\n\u003Cp\u003EWhat sets Harshal apart is not just \u003Cem\u003Ewhat\u003C/em\u003E he builds, but \u003Cem\u003Ehow\u003C/em\u003E he connects:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EHe actively mentors other founders\u003C/li\u003E\n\u003Cli\u003EHe’s constantly attending academic and industry events\u003C/li\u003E\n\u003Cli\u003EAnd he believes networking is not for funding — it’s for learning\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cblockquote\u003E\u003Cp\u003E“Surround yourself with people who’ve already walked the path you’re starting on.”\u003C/p\u003E\u003C/blockquote\u003E\n\u003Ch3\u003E4. \u003Cstrong\u003EThinking Outside the Box\u003C/strong\u003E\u003C/h3\u003E\n\u003Cp\u003EHarshal shared multiple examples of how unconventional thinking led to practical breakthroughs. One that stuck with us:\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E“The answers to tech problems are rarely in tech — they’re in how people use it.”\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cp\u003EWhether it&#8217;s deploying AI in agriculture or healthcare, Tusker AI is built not just for accuracy, but \u003Cstrong\u003Eaccessibility\u003C/strong\u003E.\u003C/p\u003E\n\u003Ch3\u003E5. \u003Cstrong\u003EBalancing Work &amp; Quality of Life\u003C/strong\u003E\u003C/h3\u003E\n\u003Cp\u003EDespite his jam-packed schedule, he’s intentional about downtime, family, and personal development. He believes:\u003C/p\u003E\n\u003Cblockquote\u003E\u003Cp\u003E“A clear mind builds better products.”\u003C/p\u003E\u003C/blockquote\u003E\n\u003Cp\u003EIn today’s hustle culture, this was a refreshing — and much-needed — reminder.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Ch2\u003E What Stood Out the Most\u003C/h2\u003E\n\u003Cp\u003EI’ve known Harshal Sir for over 15 years. If there’s one consistent quality in him, it’s his ability to \u003Cstrong\u003Esimplify complex problems using relatable, real-world analogies\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EHe doesn’t build for hype. He builds for \u003Cstrong\u003Eimpact\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EHis journey — from services to SaaS, from founder to PhD scholar — shows that learning never stops, and neither does \u003Cstrong\u003Epurpose-driven innovation\u003C/strong\u003E.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Ch2\u003EWhy This Conversation Matters\u003C/h2\u003E\n\u003Cp\u003EThis wasn’t just a podcast episode. It was a deep look at how:\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EIdeas are born from \u003Cstrong\u003Eobservation\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003EExecution comes from \u003Cstrong\u003Ediscipline\u003C/strong\u003E\u003C/li\u003E\n\u003Cli\u003EGrowth comes from \u003Cstrong\u003Ecourage\u003C/strong\u003E\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EAnd most importantly, how staying \u003Cstrong\u003Ecurious\u003C/strong\u003E and \u003Cstrong\u003Ehumble\u003C/strong\u003E can take you much further than just chasing trends.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Ch2\u003E Final Thoughts\u003C/h2\u003E\n\u003Cp\u003EFounder Stories isn’t just about documenting success — it’s about learning from journeys like Harshal Sir’s that \u003Cstrong\u003Ebreak the mold\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp\u003EIf you&#8217;re building a startup, dreaming of your own SaaS product, or wondering how to lead with both brain and heart, this conversation is your playbook.\u003C/p\u003E\n\u003Cp\u003EStay tuned — more fearless founders coming soon.\u003C/p\u003E\n\u003Chr /\u003E\n\u003Cp\u003E\u003Cstrong\u003E💡 Want to be featured on Founder Stories?\u003C/strong\u003E\u003Cbr /\u003E\nDrop us a message or DM “Founder” — let’s amplify your story.\u003C/p\u003E\n\u003Cp\u003E&nbsp;\u003C/p\u003E\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "\u003Cp\u003E&nbsp; This week, Manan Shah and I had the privilege of sitting down with someone I’ve admired for over 15 years — Harshal Trivedi, the visionary founder of Tusker AI and the driving force behind Softvan Pvt. Ltd., now part of the Sahana System Group. What began as a casual coffee conversation turned into a [&hellip;]\u003C/p\u003E\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 815,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [12],
+    "tags": [],
+    "class_list": [
+      "post-830",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-meet-up"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/830",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/comments?post=830"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/830/revisions"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/media/815"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/media?parent=830"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/categories?post=830"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/tags?post=830"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 357,
+    "date": "2025-05-24T07:27:08",
+    "date_gmt": "2025-05-24T07:27:08",
+    "guid": {
+      "rendered": "https://founderstories.org/?p=357"
+    },
+    "modified": "2025-06-06T12:08:20",
+    "modified_gmt": "2025-06-06T12:08:20",
+    "slug": "it-was-supposed-to-be-just-another-quick-meetup-6",
+    "status": "publish",
+    "type": "post",
+    "link": "https://founderstories.org/it-was-supposed-to-be-just-another-quick-meetup-6/",
+    "title": {
+      "rendered": "Founders Stories: It was supposed to be just another quick meetup."
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 742,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "single-custom.php",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [13, 12],
+    "tags": [],
+    "class_list": [
+      "post-357",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-events",
+      "category-meet-up"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/357",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/comments?post=357"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/357/revisions"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/media/742"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/media?parent=357"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/categories?post=357"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/tags?post=357"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 508,
+    "date": "2025-04-18T10:49:19",
+    "date_gmt": "2025-04-18T10:49:19",
+    "guid": {
+      "rendered": "https://founderstories.org/?p=508"
+    },
+    "modified": "2025-06-06T12:08:25",
+    "modified_gmt": "2025-06-06T12:08:25",
+    "slug": "how-getunstuck-2025-sparked-an-ai-mindshift-in-ahmedabads-tech-scene",
+    "status": "publish",
+    "type": "post",
+    "link": "https://founderstories.org/how-getunstuck-2025-sparked-an-ai-mindshift-in-ahmedabads-tech-scene/",
+    "title": {
+      "rendered": "How GetUnstuck 2025 Sparked an AI Mindshift in Ahmedabad’s Tech Scene"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 794,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "single-custom.php",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [13],
+    "tags": [],
+    "class_list": [
+      "post-508",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-events"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/508",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/comments?post=508"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/508/revisions"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/media/794"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/media?parent=508"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/categories?post=508"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/tags?post=508"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 813,
+    "date": "2025-03-18T14:50:12",
+    "date_gmt": "2025-03-18T14:50:12",
+    "guid": {
+      "rendered": "https://founderstories.org/?p=813"
+    },
+    "modified": "2025-06-06T13:11:07",
+    "modified_gmt": "2025-06-06T13:11:07",
+    "slug": "invite-us",
+    "status": "publish",
+    "type": "post",
+    "link": "https://founderstories.org/invite-us/",
+    "title": {
+      "rendered": "Invite Us"
+    },
+    "content": {
+      "rendered": "\u003Cp class=\"\" data-start=\"118\" data-end=\"141\"\u003EHello,\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"118\" data-end=\"141\"\u003EHope you&#8217;re doing well!\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"143\" data-end=\"362\"\u003EWe recently shared a story from our conversation with \u003Cstrong data-start=\"197\" data-end=\"216\"\u003EHarshal Trivedi\u003C/strong\u003E (Tusker AI), and it reached \u003Cstrong data-start=\"244\" data-end=\"279\"\u003E12,000+ impressions on LinkedIn\u003C/strong\u003E, sparking real conversations around tech, product, and fearless entrepreneurship.\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"364\" data-end=\"524\"\u003EBefore that, our story on \u003Cstrong data-start=\"390\" data-end=\"411\"\u003EVishal from Zybra\u003C/strong\u003E helped them gain \u003Cstrong data-start=\"429\" data-end=\"461\"\u003E5 new clients from Ahmedabad\u003C/strong\u003E — all because their journey resonated with the right audience.\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"526\" data-end=\"821\"\u003EAnd here’s what makes this different —\u003Cbr data-start=\"564\" data-end=\"567\" /\u003EWe’re \u003Cstrong data-start=\"573\" data-end=\"591\"\u003Enot commercial\u003C/strong\u003E, we \u003Cstrong data-start=\"596\" data-end=\"621\"\u003Edon’t charge anything\u003C/strong\u003E, and we invest our own time to \u003Cstrong data-start=\"653\" data-end=\"704\"\u003Eresearch, write, and share real founder stories\u003C/strong\u003E. It’s our \u003Cstrong data-start=\"715\" data-end=\"734\"\u003Epassion project\u003C/strong\u003E — a movement to bring out the raw, untold journeys of tech entrepreneurs like \u003Cstrong data-start=\"813\" data-end=\"820\"\u003Eyou\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"823\" data-end=\"846\"\u003EA quick intro about us:\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"848\" data-end=\"1054\"\u003E👨‍💻 I’m \u003Cstrong data-start=\"858\" data-end=\"872\"\u003EHarsh Shah\u003C/strong\u003E, founder of an IT company working with USA &amp; UK brands for the last 6 years.\u003Cbr data-start=\"949\" data-end=\"952\" /\u003E🧠 My co-founder in this initiative is \u003Cstrong data-start=\"991\" data-end=\"1005\"\u003EManan Shah\u003C/strong\u003E, Sr. Tech Lead and AI Researcher at \u003Cstrong data-start=\"1042\" data-end=\"1053\"\u003EInfosys\u003C/strong\u003E.\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"1056\" data-end=\"1177\"\u003EWe’d love to feature your story next — not as an interview, but as a casual and thoughtful chat.\u003Cbr data-start=\"1152\" data-end=\"1155\" /\u003EWe’re curious to know:\u003C/p\u003E\n\u003Cul data-start=\"1178\" data-end=\"1357\"\u003E\n\u003Cli class=\"\" data-start=\"1178\" data-end=\"1206\"\u003E\n\u003Cp class=\"\" data-start=\"1180\" data-end=\"1206\"\u003EHow your journey started\u003C/p\u003E\n\u003C/li\u003E\n\u003Cli class=\"\" data-start=\"1207\" data-end=\"1261\"\u003E\n\u003Cp class=\"\" data-start=\"1209\" data-end=\"1261\"\u003EHow you’re using (or planning) AI in your business\u003C/p\u003E\n\u003C/li\u003E\n\u003Cli class=\"\" data-start=\"1262\" data-end=\"1298\"\u003E\n\u003Cp class=\"\" data-start=\"1264\" data-end=\"1298\"\u003EWhat mindset has helped you grow\u003C/p\u003E\n\u003C/li\u003E\n\u003Cli class=\"\" data-start=\"1299\" data-end=\"1357\"\u003E\n\u003Cp class=\"\" data-start=\"1301\" data-end=\"1357\"\u003EAnd what lessons others can learn from your experience\u003C/p\u003E\n\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp class=\"\" data-start=\"1359\" data-end=\"1433\"\u003ELet us know if you’d be open to meeting — we’ll work around your schedule.\u003C/p\u003E\n\u003Cp class=\"\" data-start=\"1435\" data-end=\"1559\"\u003EWarm regards,\u003Cbr data-start=\"1448\" data-end=\"1451\" /\u003E\u003Cstrong data-start=\"1451\" data-end=\"1478\"\u003EHarsh Shah &amp; Manan Shah\u003C/strong\u003E\u003Cbr data-start=\"1478\" data-end=\"1481\" /\u003E\u003Ca class=\"\" href=\"https://founderstories.org\" target=\"_new\" rel=\"noopener\" data-start=\"1481\" data-end=\"1559\"\u003EFounder Stories \u003C/a\u003E\u003C/p\u003E\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "\u003Cp\u003EHello, Hope you&#8217;re doing well! We recently shared a story from our conversation with Harshal Trivedi (Tusker AI), and it reached 12,000+ impressions on LinkedIn, sparking real conversations around tech, product, and fearless entrepreneurship. Before that, our story on Vishal from Zybra helped them gain 5 new clients from Ahmedabad — all because their journey [&hellip;]\u003C/p\u003E\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 842,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [12],
+    "tags": [],
+    "class_list": [
+      "post-813",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-meet-up"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/813",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/comments?post=813"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://founderstories.org/wp-json/wp/v2/posts/813/revisions"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/media/842"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://founderstories.org/wp-json/wp/v2/media?parent=813"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/categories?post=813"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://founderstories.org/wp-json/wp/v2/tags?post=813"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

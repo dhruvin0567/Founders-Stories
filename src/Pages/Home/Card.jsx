@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useCallback, useState } from "react";
 import BlogCard from "../../Components/BlogCard/BlogCard";
 import Pagination from "../../Components/Common/Pagination";
 import axios from "axios";
@@ -7,41 +7,132 @@ const Card = () => {
   const [data, setData] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isFetching, setIsFetching] = useState(false);
 
   const blogsPerPage = 6;
 
   const fetchingData = async () => {
     try {
-      const response = await axios.get("/data/blogCard.json");
-      setData(response.data);
+      setIsFetching(true);
+      const response = await axios.get(
+        "https://founderstories.org/wp-json/wp/v2/posts?per_page=50&_embed"
+      );
+
+      const mappedData = response.data.map((item) => ({
+        id: item.id,
+        slug: item.slug,
+        blogImg:
+          item._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+          "https://via.placeholder.com/600x400",
+        blogDate: new Date(item.date).toLocaleDateString(),
+        blogTitle: item.title.rendered,
+        blogDescription: item.excerpt.rendered.replace(/<[^>]+>/g, ""),
+        categories:
+          item._embedded?.["wp:term"]?.[0]?.map((cat) => cat.name) || [],
+      }));
+
+      setData(mappedData);
+      try {
+        localStorage.setItem(
+          "fs_posts_cache_v1",
+          JSON.stringify({
+            ts: Date.now(),
+            items: mappedData,
+          })
+        );
+      } catch (_) {}
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error fetching WordPress posts:", error);
     }
+    setIsFetching(false);
   };
 
   useEffect(() => {
+    try {
+      const cached = localStorage.getItem("fs_posts_cache_v1");
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed?.items?.length) {
+          setData(parsed.items);
+        }
+      }
+    } catch (_) {}
+
     fetchingData();
   }, []);
 
-  const handleCategoryClick = (category) => {
+  const handleCategoryClick = useCallback((category) => {
     setSelectedCategory(category);
     setCurrentPage(1);
-  };
+  }, []);
 
-  const filteredBlogs = selectedCategory
-    ? data.filter((item) => item.categories.includes(selectedCategory))
-    : data;
+  const filteredBlogs = useMemo(() => {
+    if (!selectedCategory) return data;
+    return data.filter((item) => item.categories.includes(selectedCategory));
+  }, [data, selectedCategory]);
 
-  const indexOfLastBlog = currentPage * blogsPerPage;
-  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
-  const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
-  const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
+  const currentBlogs = useMemo(() => {
+    const indexOfLastBlog = currentPage * blogsPerPage;
+    const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+    return filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+  }, [filteredBlogs, currentPage, blogsPerPage]);
+
+  const totalPages = useMemo(() => {
+    return Math.ceil(filteredBlogs.length / blogsPerPage);
+  }, [filteredBlogs.length, blogsPerPage]);
+
+  useEffect(() => {
+    if (!currentBlogs || currentBlogs.length === 0) return;
+
+    const urls = currentBlogs.map((b) => b.blogImg).filter(Boolean);
+
+    urls.forEach((url) => {
+      const img = new Image();
+      img.decoding = "async";
+      img.loading = "eager";
+      img.src = url;
+    });
+
+    const firstUrl = urls[0];
+    if (firstUrl) {
+      try {
+        const link = document.createElement("link");
+        link.rel = "preload";
+        link.as = "image";
+        link.href = firstUrl;
+        const exists = Array.from(
+          document.head.querySelectorAll('link[rel="preload"][as="image"]')
+        ).some((l) => l.href === link.href);
+        if (!exists) {
+          document.head.appendChild(link);
+        }
+      } catch (_) {}
+    }
+  }, [currentBlogs]);
 
   return (
     <div className="container custom-blog-main-container">
       {!selectedCategory && <h3 className="custom-main-title">All Articles</h3>}
 
       <div className="row">
+        {currentBlogs.length === 0 &&
+          Array.from({ length: blogsPerPage }).map((_, idx) => (
+            <div
+              className="col-lg-4 col-sm-6 mb-4 custom-main-post"
+              key={`skeleton-${idx}`}
+            >
+              <div className="card border-0 custom-post-card h-100">
+                <div className="d-block overflow-hidden skeleton-img-block" />
+                <div className="card-body px-0 custom-card-body">
+                  <div className="skeleton-line-light h-14px w-40p mb-12px skeleton-line" />
+                  <div className="skeleton-line h-18px w-90p mb-8px" />
+                  <div className="skeleton-line h-18px w-75p mb-16px" />
+                  <div className="skeleton-line-dark h-14px w-60p" />
+                </div>
+              </div>
+            </div>
+          ))}
+
         {currentBlogs.map((item, index) => (
           <BlogCard
             key={item.id}
@@ -53,6 +144,7 @@ const Card = () => {
             categories={item.categories}
             onCategoryClick={handleCategoryClick}
             delay={index * 100}
+            isFirst={currentPage === 1 && index === 0}
           />
         ))}
       </div>

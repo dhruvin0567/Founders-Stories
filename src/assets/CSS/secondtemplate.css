@@ -62,3 +62,51 @@
     font-size: 16px !important;
   }
 }
+
+/* Skeleton and image loader styles */
+.skeleton-img-block {
+  background: #f0f0f0;
+  height: 200px;
+  width: 100%;
+}
+
+.skeleton-line {
+  background: #e8e8e8;
+}
+
+.skeleton-line-light {
+  background: #eee;
+}
+
+.skeleton-line-dark {
+  background: #f0f0f0;
+}
+
+.h-14px { height: 14px; }
+.h-18px { height: 18px; }
+
+.w-40p { width: 40%; }
+.w-60p { width: 60%; }
+.w-75p { width: 75%; }
+.w-90p { width: 90%; }
+
+.mb-8px { margin-bottom: 8px; }
+.mb-12px { margin-bottom: 12px; }
+.mb-16px { margin-bottom: 16px; }
+
+.image-loader-wrapper {
+  position: relative;
+}
+
+.image-loader-placeholder {
+  background: #f0f0f0;
+  height: 200px;
+  width: 100%;
+}
+
+.spinner-sm-custom {
+  width: 24px;
+  height: 24px;
+  border-width: 2px;
+  color: #333;
+}

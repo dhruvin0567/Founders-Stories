@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ImageWithLoader from "../Common/ImageWithLoader";
 
 const BlogCard = ({
   slug,
@@ -46,11 +47,11 @@ const BlogCard = ({
           onClick={handleNavigate}
           style={{ cursor: "pointer" }}
         >
-          <img
+          <ImageWithLoader
             src={blogImg}
-            className="card-img-top custom-blog-img transition-scale"
             alt={blogTitle}
-            loading={isFirst ? "eager" : "lazy"}
+            className="card-img-top custom-blog-img transition-scale"
+            eager={isFirst}
           />
         </div>
 
