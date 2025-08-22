@@ -52,6 +52,7 @@ const BlogCard = ({
             alt={blogTitle}
             className="card-img-top custom-blog-img transition-scale"
             eager={isFirst}
+            placeholderHeight={220}
           />
         </div>
 
