@@ -1,7 +1,7 @@
 @font-face {
   font-family: "bootstrap-icons";
-  src: url("/assets/bootstrap-icons.woff2?e348531") format("woff2"),
-    url("/assets/bootstrap-icons.woff?e348531") format("woff");
+  src: url("/public/assets/bootstrap-icons.woff2") format("woff2"),
+    url("/public//assets/bootstrap-icons.woff") format("woff");
   font-display: swap;
 }
 
