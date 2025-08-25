@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-  font-family: "bootstrap-icons";
+  font-family: "bootstrap-icons"; /* match exact family name from Bootstrap */
   src: url("/assets/bootstrap.woff2?e348531") format("woff2"),
     url("/assets/bootstrap.woff?e348531") format("woff");
   font-display: swap;

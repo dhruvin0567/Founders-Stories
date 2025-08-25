@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/webp" href="/img/logo/favicon.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Speed up connections for WP API and images -->
     <link rel="preconnect" href="https://founderstories.org" crossorigin />
     <link rel="dns-prefetch" href="https://founderstories.org" />
@@ -18,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Load font stylesheet non-blocking -->
+    <!-- Google Fonts with font-display=swap -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -31,6 +32,17 @@
         rel="stylesheet"
       />
     </noscript>
+
+    <link
+      rel="preload"
+      href="/assets/bootstrap.woff2?e348531"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Your main CSS -->
+    <link rel="stylesheet" href="/src/main.css" />
   </head>
 
   <body>
