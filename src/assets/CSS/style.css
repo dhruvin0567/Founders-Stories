@@ -10,6 +10,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("/assets/bootstrap.woff2?e348531") format("woff2"),
+    url("/assets/bootstrap.woff?e348531") format("woff");
+  font-display: swap;
+}
+
 html {
   scroll-padding-top: 105px !important;
 }
