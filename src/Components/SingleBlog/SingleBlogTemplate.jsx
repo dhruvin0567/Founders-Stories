@@ -42,13 +42,12 @@ const SingleBlogTemplate = ({
           )}
 
           {blogDescription && (
-            <p
+            <div
               className="mb-lg-5 mb-4"
               data-aos="fade-up"
               data-aos-offset="100"
-            >
-              {blogDescription}
-            </p>
+              dangerouslySetInnerHTML={{ __html: blogDescription }}
+            />
           )}
 
           {blogmainImage && (
@@ -58,7 +57,7 @@ const SingleBlogTemplate = ({
               className="hero fadeInUp"
               src={blogmainImage}
               loading="lazy"
-              alt={blogImageDescription || blogTitle}
+              alt={blogImageDescription || blogTitle || "Blog image"}
             />
           )}
         </div>
@@ -122,7 +121,7 @@ const SingleBlogTemplate = ({
           <div className="container">
             <div className="row gy-4">
               {authors.map((author, index) => (
-                <div className="col-lg-6 col-12 mt-0" key={index}>
+                <div className="col-lg-6 mt-0" key={index}>
                   <div className="d-flex align-items-start gap-3">
                     {author.image && (
                       <img
@@ -138,11 +137,13 @@ const SingleBlogTemplate = ({
                       <h5 className="my-2">
                         Author: <span className="primary">{author.name}</span>
                       </h5>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: author.description || "",
-                        }}
-                      />
+                      {author.description ? (
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: author.description,
+                          }}
+                        />
+                      ) : null}
                     </div>
                   </div>
                 </div>

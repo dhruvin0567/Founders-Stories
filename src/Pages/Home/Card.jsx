@@ -110,9 +110,6 @@ const Card = () => {
     }
   }, [currentBlogs]);
 
-  // if (!data) {
-  //   return <p>loading...</p>;
-  // }
   return (
     <div className="container custom-blog-main-container">
       {!selectedCategory && <h3 className="custom-main-title">All Articles</h3>}
