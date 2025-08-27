@@ -46,7 +46,11 @@
       "hentry",
       "category-meet-up"
     ],
-    "acf": [],
+    "acf": {
+      "intro_paragraph": "",
+      "tabs": null,
+      "tab_contents": null
+    },
     "_links": {
       "self": [
         {
@@ -163,7 +167,11 @@
       "hentry",
       "category-meet-up"
     ],
-    "acf": [],
+    "acf": {
+      "intro_paragraph": "",
+      "tabs": null,
+      "tab_contents": null
+    },
     "_links": {
       "self": [
         {
@@ -280,7 +288,16 @@
       "hentry",
       "category-meet-up"
     ],
-    "acf": [],
+    "acf": {
+      "intro_paragraph": "",
+      "tabs": null,
+      "tab_contents": [
+        {
+          "heading": "About the Founder:",
+          "content": ""
+        }
+      ]
+    },
     "_links": {
       "self": [
         {
@@ -398,7 +415,55 @@
       "category-events",
       "category-meet-up"
     ],
-    "acf": [],
+    "acf": {
+      "intro_paragraph": "Manan (Tech Lead at Infosys) and I had planned to catch up with Vishal, the founder of Zybra Finance Solutions,\r\nfor a 30-minute coffee chat. You know — quick hellos, a few founder questions, and back to the daily hustle.\r\nBut 30 minutes turned into four hours.\r\nAnd honestly? It still didn’t feel like enough.\r\nWhat unfolded was less of a meeting and more of a masterclass in SaaS entrepreneurship — packed with\r\nwisdom,\r\nstories, laughter, and raw insights that most pe ople pay big money to hear at startup conferences.",
+      "tabs": [
+        {
+          "tab_title": " Meet Vishal"
+        },
+        {
+          "tab_title": " What We Learn?"
+        },
+        {
+          "tab_title": "  What Really Stood Out?"
+        },
+        {
+          "tab_title": " My Takeaways"
+        },
+        {
+          "tab_title": "Bonus Thought"
+        },
+        {
+          "tab_title": " Final Thoughts"
+        }
+      ],
+      "tab_contents": [
+        {
+          "heading": "   Meet Vishal: The Quiet Giant Behind a SaaS Powerhouse ",
+          "content": "If you don’t know Zybra, it’s an Indian-born accounting SaaS platform that competes with the likes of Xero and Tally — and they’re not just surviving; they’re winning. With over 1 million active users annually, Zybra is proving that with patience, grit, and clarity, Indian SaaS startups can play on a global field. And Vishal? He’s as grounded as they come — humble, sharp, and a true open book. The kind of founder who doesn’t just talk wins but walks you through the why and how behind each lesson."
+        },
+        {
+          "heading": "Here’s What We Learned in 4 Powerful Hours",
+          "content": "\u003Cdiv\u003E\r\n\u003Ch5\u003E1. SaaS is Not a Sprint — It’s a Marathon\u003C/h5\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E“Don’t expect quick results,” Vishal said.“SaaS is a long-term game. You’re building a system, not chasing virality.”That hit hard. Especially in a world where founders are often glorified for exits rather\u003C/div\u003E\r\n\u003Cdiv\u003E than endurance.\u003C/div\u003E\r\n\u003C/div\u003E\r\n\u003C/div\u003E\r\n\u003Cdiv\u003E\r\n\u003Ch5\u003E2. You Don’t Need to Fear the Big Guys\u003C/h5\u003E\r\nXero. Tally. Global giants. And yet, Zybra carved its space. How? “Be obsessed with solving a specific user’s problem better than anyone else,” Vishal shared. Competing with giants isn’t about matching features. It’s about understanding users deeply and delivering clarity.\r\n\u003Ch5\u003E3. Validate Before You Build\u003C/h5\u003E\r\nThis was gold: “Don’t fall in love with your idea. Fall in love with your user’s pain.” Before Zybra even built the product, they validated the market need, refined use cases, and fine-tuned their pitch — all before writing thousands of lines of code.\r\n\u003Ch5\u003E4. High-Touch Beats High-Tech (Initially)\u003C/h5\u003E\r\nIn an era of automated demos and self-serve onboarding, Zybra did the opposite. They grew by meeting clients one-on-one, demoing their tool, answering questions, and building trust. Old-school? Maybe. Effective? 100%.\r\n\u003Ch5\u003E5. Stay Lean, Stay Disciplined\u003C/h5\u003E\r\n“Don’t chase growth at any cost,” Vishal warned. While most startups burn cash chasing vanity metrics, Zybra focused on being lean, sustainable, and profitable. It’s not sexy, but it’s smart.\r\n\u003Ch5\u003E6. Funding Is a Strategy, Not a Lifeline\u003C/h5\u003E\r\nBootstrapped? Funded? Both? Vishal broke down the pros and cons of each stage and reminded us that raising money isn’t the goal. Solving real problems profitably is. The rest follows.\r\n\r\n\u003C/div\u003E"
+        },
+        {
+          "heading": "What Really Stood Out? Humility.",
+          "content": "Despite his success, Vishal wasn’t guarded, rushed, or salesy. He was warm, brutally honest, and generous with his time. No slides. No jargon. Just someone who truly wants the next generation of entrepreneurs to win — without making the same mistakes. That’s rare. And it’s inspiring."
+        },
+        {
+          "heading": "My Takeaways (and Yours, If You’re Building in SaaS)",
+          "content": "If you’re an aspiring founder or already knee-deep in the trenches, here are a few things I hope you’ll remember: Validate relentlessly. Ask before you build. Solve before you scale. Don’t rush automation. Start with people. Learn. Then systemize. Keep your costs lean. The real burn is not knowing where your money’s going. Play the long game. Building trust takes time. Humility wins. In teams, in client relationships, in life"
+        },
+        {
+          "heading": "Bonus Thought (because I had to…)",
+          "content": "In the group pic we clicked? Yeah, let’s just say the startup weight gain arc is real. \u003Cimg class=\"emoji\" role=\"img\" draggable=\"false\" src=\"https://s.w.org/images/core/emoji/15.1.0/svg/1f605.svg\" alt=\"😅\" /\u003E Note to self: It’s time to build “Startup Body 2.0.” Because as much as I love learning from founders, I need to learn from my weighing scale too."
+        },
+        {
+          "heading": "Final Thoughts",
+          "content": "You don’t always need a mic to start a podcast. You don’t need a million dollars to build something valuable. You just need the right people, the right intentions, and relentless curiosity. That’s what this meetup was for me and Manan — not just a coffee chat but a refuel for the soul. Thanks, Vishal, for being the kind of founder who lifts others while climbing. Your story, honesty, and lessons are going to stay with us and hopefully inspire many more. If you’ve had a similar moment or conversation that changed your view of business or life, drop it in the comments. I’d love to hear your story, too."
+        }
+      ]
+    },
     "_links": {
       "self": [
         {
@@ -515,7 +580,48 @@
       "hentry",
       "category-events"
     ],
-    "acf": [],
+    "acf": {
+      "intro_paragraph": "",
+      "tabs": [
+        {
+          "tab_title": "What an eye-opening experience!"
+        },
+        {
+          "tab_title": "3 Game-Changing Sessions That Stood Out"
+        },
+        {
+          "tab_title": "Workshops That Mattered"
+        },
+        {
+          "tab_title": "Gratitude Where It’s Due"
+        },
+        {
+          "tab_title": "Final Thought"
+        }
+      ],
+      "tab_contents": [
+        {
+          "heading": "What an eye-opening experience!",
+          "content": "\u003Cspan style=\"font-weight: 400;\"\u003ELast week, I had the opportunity to attend GetUnstuck 2025—Ahmedabad’s first-ever Advanced AI Conference, exclusively curated for IT Services CXOs. This wasn’t just another buzzword-filled tech summit. It was a transformative gathering that delivered real, actionable insights into how Artificial Intelligence is actively reshaping the future of business operations.\u003C/span\u003E\r\n\r\n&nbsp;\r\n\r\n\u003Cspan style=\"font-weight: 400;\"\u003EFrom interactive workshops to brilliant keynotes, every moment of this event had one thing in common: clarity in action.\u003C/span\u003E"
+        },
+        {
+          "heading": "3 Game-Changing Sessions That Stood Out",
+          "content": "\u003Ch4\u003E\u003Cb\u003ERonik Patel: The AI Movement is Now\u003C/b\u003E\u003C/h4\u003E\r\n\u003Cspan style=\"font-weight: 400;\"\u003EHe compared today’s AI revolution to the early days of the Internet. His insights made it crystal clear—AI is no longer optional. His energy and clarity made him one of the most inspiring voices of the day.\u003C/span\u003E\r\n\r\n&nbsp;\r\n\u003Ch4\u003E\u003Cb\u003EKhushbu Doshi: Frameworks, Not Fluff\u003C/b\u003E\u003C/h4\u003E\r\n\u003Cspan style=\"font-weight: 400;\"\u003EShe shared practical frameworks with real-time examples of how AI is already cutting costs by 15–20% for companies, while improving operational efficiency. It was like a cheat sheet for implementing AI in your own business, minus the jargon.\u003C/span\u003E\r\n\r\n&nbsp;\r\n\u003Ch4\u003E\u003Cb\u003EDarshan Dagli: Build What Clients Actually Need\u003C/b\u003E\u003C/h4\u003E\r\n\u003Cspan style=\"font-weight: 400;\"\u003EHe reminded us that full automation doesn’t have to be the end goal from Day 1. Instead, he emphasized the power of small, progressive AI wins—solutions that solve real problems today and scale over time.\u003C/span\u003E\r\n\r\n&nbsp;"
+        },
+        {
+          "heading": "Workshops That Mattered",
+          "content": "\u003Cspan style=\"font-weight: 400;\"\u003EThe hands-on sessions were nothing short of goldmines. I walked away with:\u003C/span\u003E\r\n\u003Cul\u003E\r\n \t\u003Cli style=\"font-weight: 400;\" aria-level=\"1\"\u003E\u003Cspan style=\"font-weight: 400;\"\u003EQuick AI wins that we can implement at Codersh Web Services immediately\u003C/span\u003E\u003C/li\u003E\r\n \t\u003Cli style=\"font-weight: 400;\" aria-level=\"1\"\u003E\u003Cspan style=\"font-weight: 400;\"\u003EClarity on turning internal AI experiments into client-facing services\u003C/span\u003E\u003C/li\u003E\r\n \t\u003Cli aria-level=\"1\"\u003E\u003Cspan style=\"font-weight: 400;\"\u003EPractical steps to automate small tasks and scale smartly\u003C/span\u003E\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cspan style=\"font-weight: 400;\"\u003E \u003C/span\u003E"
+        },
+        {
+          "heading": "Gratitude Where It’s Due",
+          "content": "\u003Cspan style=\"font-weight: 400;\"\u003EA huge shoutout to Manish Dudharejia and the entire team behind GetUnstuck 2025. You didn’t just host an event, you shifted mindsets. I walked out of the venue not only inspired but equipped with actual plans, not just vague ideas.\u003C/span\u003E"
+        },
+        {
+          "heading": "Final Thought",
+          "content": "\u003Cspan style=\"font-weight: 400;\"\u003EIf AI felt like a buzzword before, GetUnstuck 2025 made it feel like a toolbox. And we’re now ready to build.\u003C/span\u003E"
+        }
+      ]
+    },
     "_links": {
       "self": [
         {
@@ -632,7 +738,28 @@
       "hentry",
       "category-meet-up"
     ],
-    "acf": [],
+    "acf": {
+      "intro_paragraph": "A quick intro about us:  I’m Harsh Shah, founder of an IT company working with USA & UK brands for the last 6 years. & My co-founder in this initiative is Manan Shah, Sr. Tech Lead and AI Researcher at Infosys. We’d love to feature your story next — not as an interview, but as a casual and thoughtful chat.",
+      "tabs": [
+        {
+          "tab_title": ""
+        }
+      ],
+      "tab_contents": [
+        {
+          "heading": "Invite Us",
+          "content": "\u003Cp class=\"\" data-start=\"118\" data-end=\"141\"\u003EHello,\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"118\" data-end=\"141\"\u003EHope you're doing well!\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"143\" data-end=\"362\"\u003EWe recently shared a story from our conversation with \u003Cstrong data-start=\"197\" data-end=\"216\"\u003EHarshal Trivedi\u003C/strong\u003E (Tusker AI), and it reached \u003Cstrong data-start=\"244\" data-end=\"279\"\u003E12,000+ impressions on LinkedIn\u003C/strong\u003E, sparking real conversations around tech, product, and fearless entrepreneurship.\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"364\" data-end=\"524\"\u003EBefore that, our story on \u003Cstrong data-start=\"390\" data-end=\"411\"\u003EVishal from Zybra\u003C/strong\u003E helped them gain \u003Cstrong data-start=\"429\" data-end=\"461\"\u003E5 new clients from Ahmedabad\u003C/strong\u003E — all because their journey resonated with the right audience.\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"526\" data-end=\"821\"\u003EAnd here’s what makes this different —\u003Cbr data-start=\"564\" data-end=\"567\" /\u003EWe’re \u003Cstrong data-start=\"573\" data-end=\"591\"\u003Enot commercial\u003C/strong\u003E, we \u003Cstrong data-start=\"596\" data-end=\"621\"\u003Edon’t charge anything\u003C/strong\u003E, and we invest our own time to \u003Cstrong data-start=\"653\" data-end=\"704\"\u003Eresearch, write, and share real founder stories\u003C/strong\u003E. It’s our \u003Cstrong data-start=\"715\" data-end=\"734\"\u003Epassion project\u003C/strong\u003E — a movement to bring out the raw, untold journeys of tech entrepreneurs like \u003Cstrong data-start=\"813\" data-end=\"820\"\u003Eyou\u003C/strong\u003E.\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"823\" data-end=\"846\"\u003EA quick intro about us:\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"848\" data-end=\"1054\"\u003E👨‍💻 I’m \u003Cstrong data-start=\"858\" data-end=\"872\"\u003EHarsh Shah\u003C/strong\u003E, founder of an IT company working with USA &amp; UK brands for the last 6 years.\u003Cbr data-start=\"949\" data-end=\"952\" /\u003E🧠 My co-founder in this initiative is \u003Cstrong data-start=\"991\" data-end=\"1005\"\u003EManan Shah\u003C/strong\u003E, Sr. Tech Lead and AI Researcher at \u003Cstrong data-start=\"1042\" data-end=\"1053\"\u003EInfosys\u003C/strong\u003E.\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"1056\" data-end=\"1177\"\u003EWe’d love to feature your story next — not as an interview, but as a casual and thoughtful chat.\u003Cbr data-start=\"1152\" data-end=\"1155\" /\u003EWe’re curious to know:\u003C/p\u003E\r\n\r\n\u003Cul data-start=\"1178\" data-end=\"1357\"\u003E\r\n \t\u003Cli class=\"\" data-start=\"1178\" data-end=\"1206\"\u003E\r\n\u003Cp class=\"\" data-start=\"1180\" data-end=\"1206\"\u003EHow your journey started\u003C/p\u003E\r\n\u003C/li\u003E\r\n \t\u003Cli class=\"\" data-start=\"1207\" data-end=\"1261\"\u003E\r\n\u003Cp class=\"\" data-start=\"1209\" data-end=\"1261\"\u003EHow you’re using (or planning) AI in your business\u003C/p\u003E\r\n\u003C/li\u003E\r\n \t\u003Cli class=\"\" data-start=\"1262\" data-end=\"1298\"\u003E\r\n\u003Cp class=\"\" data-start=\"1264\" data-end=\"1298\"\u003EWhat mindset has helped you grow\u003C/p\u003E\r\n\u003C/li\u003E\r\n \t\u003Cli class=\"\" data-start=\"1299\" data-end=\"1357\"\u003E\r\n\u003Cp class=\"\" data-start=\"1301\" data-end=\"1357\"\u003EAnd what lessons others can learn from your experience\u003C/p\u003E\r\n\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp class=\"\" data-start=\"1359\" data-end=\"1433\"\u003ELet us know if you’d be open to meeting — we’ll work around your schedule.\u003C/p\u003E\r\n\u003Cp class=\"\" data-start=\"1435\" data-end=\"1559\"\u003EWarm regards,\u003Cbr data-start=\"1448\" data-end=\"1451\" /\u003E\u003Cstrong data-start=\"1451\" data-end=\"1478\"\u003EHarsh Shah &amp; Manan Shah\u003C/strong\u003E\u003Cbr data-start=\"1478\" data-end=\"1481\" /\u003E\u003Ca class=\"\" href=\"https://founderstories.org\" target=\"_new\" rel=\"noopener\" data-start=\"1481\" data-end=\"1559\"\u003EFounder Stories – https://founderstories.org\u003C/a\u003E\u003C/p\u003E"
+        },
+        {
+          "heading": "",
+          "content": ""
+        },
+        {
+          "heading": "",
+          "content": ""
+        }
+      ]
+    },
     "_links": {
       "self": [
         {
