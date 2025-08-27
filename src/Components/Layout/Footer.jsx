@@ -83,7 +83,9 @@ const Footer = () => {
         <hr className="my-4" />
         <div className="row">
           <div className="col-md-6 text-center text-md-start">
-            <p className="mb-0">&copy; {currentYear} Founder Stories. All rights reserved.</p>
+            <p className="mb-0">
+              &copy; {currentYear} Founder Stories. All rights reserved.
+            </p>
           </div>
           <div className="col-md-6 text-center text-md-end">
             <p className="mb-0">

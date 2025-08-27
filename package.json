@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "cp ./node_modules/bootstrap-icons/font/fonts/* ./public/fonts/"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -15,6 +16,8 @@
     "bootstrap": "^5.3.7",
     "bootstrap-icons": "^1.13.1",
     "dom": "^0.0.3",
+    "framer-motion": "^12.23.12",
+    "motion": "^12.23.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-helmet": "^6.1.0",

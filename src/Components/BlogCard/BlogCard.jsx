@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import ImageWithLoader from "../Common/ImageWithLoader";
 
 const BlogCard = ({
@@ -17,7 +16,11 @@ const BlogCard = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    AOS.init({ once: true, duration: 400, easing: "ease-out" });
+    AOS.init({
+      once: true,
+      duration: 400,
+      easing: "ease-out",
+    });
   }, []);
 
   const handleNavigate = () => {
