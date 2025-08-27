@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const ImageWithLoader = ({
   src,
@@ -8,6 +8,7 @@ const ImageWithLoader = ({
   onClick,
   style,
   placeholderHeight = 200,
+  placeholderWidth = "100%",
   fallbackSrc = "https://via.placeholder.com/600x400?text=Image+not+available",
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -17,12 +18,20 @@ const ImageWithLoader = ({
   const showLoader = !isLoaded && !hasError;
 
   return (
-    <div className="image-loader-wrapper" onClick={onClick}>
-      {/* Lightweight skeleton while image loads */}
+    <div
+      className="image-loader-wrapper"
+      onClick={onClick}
+      style={{ width: placeholderWidth, height: placeholderHeight }}
+    >
+      {/* Placeholder shimmer while loading */}
       {showLoader && (
         <div
           className="image-loader-placeholder shimmer"
-          style={{ height: placeholderHeight, width: "100%", borderRadius: 8 }}
+          style={{
+            height: placeholderHeight,
+            width: placeholderWidth,
+            borderRadius: 8,
+          }}
         />
       )}
 
@@ -32,34 +41,44 @@ const ImageWithLoader = ({
           src={isInView || eager ? src : undefined}
           alt={alt}
           className={className}
+          width="100%"
+          height={placeholderHeight}
           style={{
             display: "block",
+            width: "100%",
+            height: placeholderHeight,
+            objectFit: "cover",
             opacity: isLoaded ? 1 : 0,
-            transition: "opacity 0.25s ease-in-out",
+            transition: "opacity 0.3s ease-in-out",
             ...(style || {}),
           }}
           loading={eager ? "eager" : "lazy"}
           decoding="async"
-          fetchpriority={eager ? "high" : "low"}
+          fetchPriority={eager ? "high" : "low"}
           onLoad={() => setIsLoaded(true)}
           onError={() => setHasError(true)}
         />
       )}
 
-      {/* Fallback image if original fails */}
+      {/* Fallback image */}
       {hasError && (
         <img
           src={fallbackSrc}
           alt={alt}
           className={className}
+          width="100%"
+          height={placeholderHeight}
           style={{
             display: "block",
+            width: "100%",
+            height: placeholderHeight,
+            objectFit: "cover",
             opacity: 1,
             ...(style || {}),
           }}
           loading="eager"
           decoding="async"
-          fetchpriority="low"
+          fetchPriority="low"
         />
       )}
     </div>

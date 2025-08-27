@@ -59,11 +59,14 @@
 }
 
 /* Image loader styles */
+
 .image-loader-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .image-loader-placeholder {
+  border-radius: 8px;
   background: #f0f0f0;
   height: 200px;
   width: 100%;
