@@ -2,14 +2,6 @@ html {
   scroll-padding-top: 105px !important;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #000;
-}
-
 @font-face {
   font-family: "bootstrap-icons";
   src: url("/public/fonts/bootstrap-icons.woff2") format("woff2"),
@@ -17,6 +9,14 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
 }
 
 p,

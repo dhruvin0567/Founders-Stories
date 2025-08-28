@@ -2,6 +2,15 @@
   max-width: 1200px !important;
 }
 
+@font-face {
+  font-family: "bootstrap-icons" !important;
+  src: url("/public/fonts/bootstrap-icons.woff2") format("woff2"),
+    url("/public/fonts/bootstrap-icons.woff") format("woff");
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-display: swap !important;
+}
+
 /* single page font css */
 #primary h1 {
   font-size: 2.5rem !important;

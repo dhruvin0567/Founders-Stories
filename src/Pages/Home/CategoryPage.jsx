@@ -10,29 +10,13 @@ const CategoryPage = () => {
   const { categoryName } = useParams();
   const location = useLocation();
   const selectedCategoryDisplayName = location?.state?.categoryName || null;
+
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
-  const blogsPerPage = 6;
 
-  const fetchCategoryIdBySlug = async (slug) => {
-    if (!slug) return null;
-    try {
-      const { data } = await axios.get(
-        `https://founderstories.org/wp-json/wp/v2/categories?slug=${encodeURIComponent(
-          slug
-        )}`
-      );
-      if (Array.isArray(data) && data.length > 0) {
-        return data[0].id;
-      }
-      return null;
-    } catch (error) {
-      console.error("Error fetching category by slug:", error);
-      return null;
-    }
-  };
+  const blogsPerPage = 6;
 
   const mapPosts = (items) => {
     return items.map((item) => {
@@ -56,14 +40,32 @@ const CategoryPage = () => {
     });
   };
 
-  const fetchPostsForCategory = async (slug, page) => {
-    setIsLoading(true);
+  const fetchCategoryIdBySlug = async (slug) => {
+    if (!slug) return null;
+    try {
+      const { data } = await axios.get(
+        `https://founderstories.org/wp-json/wp/v2/categories?slug=${encodeURIComponent(
+          slug
+        )}`
+      );
+      return Array.isArray(data) && data[0] ? data[0].id : null;
+    } catch (error) {
+      console.error("Error fetching category by slug:", error);
+      return null;
+    }
+  };
+
+  const fetchPostsForCategory = async (slug, page, background = false) => {
+    if (!background) setIsLoading(true);
+
     try {
       const categoryId = await fetchCategoryIdBySlug(slug);
       if (!categoryId) {
-        setData([]);
-        setTotalPages(1);
-        setIsLoading(false);
+        if (!background) {
+          setData([]);
+          setTotalPages(1);
+          setIsLoading(false);
+        }
         return;
       }
 
@@ -80,79 +82,62 @@ const CategoryPage = () => {
         }
       );
 
-      if (response.status === 400 && page > 1) {
-        const headerTotal = parseInt(
-          response.headers?.["x-wp-totalpages"] || "1",
-          10
-        );
-        setTotalPages(Number.isNaN(headerTotal) ? 1 : headerTotal);
-        setCurrentPage(Number.isNaN(headerTotal) ? 1 : headerTotal);
-        setIsLoading(false);
-        return;
-      }
+      const items = Array.isArray(response.data) ? mapPosts(response.data) : [];
 
-      const items = Array.isArray(response.data) ? response.data : [];
-      setData(mapPosts(items));
-
+      setData(items);
       const headerTotal = parseInt(
         response.headers?.["x-wp-totalpages"] || "1",
         10
       );
       setTotalPages(Number.isNaN(headerTotal) ? 1 : headerTotal);
+
+      localStorage.setItem(
+        `fs_cache_${slug}`,
+        JSON.stringify({ items, page, total: headerTotal, time: Date.now() })
+      );
     } catch (error) {
       console.error("Error fetching posts:", error);
-      setData([]);
-      setTotalPages(1);
+      if (!background) {
+        setData([]);
+        setTotalPages(1);
+      }
     }
-    setIsLoading(false);
+
+    if (!background) setIsLoading(false);
   };
 
   useEffect(() => {
-    try {
-      const cached = localStorage.getItem("fs_posts_cache_v1");
-      if (cached) {
+    const cached = localStorage.getItem(`fs_cache_${categoryName}`);
+    if (cached) {
+      try {
         const parsed = JSON.parse(cached);
-        const items = Array.isArray(parsed?.items) ? parsed.items : [];
-        if (items.length) {
-          if (selectedCategoryDisplayName) {
-            const filtered = items.filter((item) =>
-              Array.isArray(item.categories)
-                ? item.categories.includes(selectedCategoryDisplayName)
-                : false
-            );
-            if (filtered.length) {
-              setData(filtered);
-              setTotalPages(
-                Math.max(1, Math.ceil(filtered.length / blogsPerPage))
-              );
-              setIsLoading(false);
-            }
-          }
+        if (Array.isArray(parsed.items) && parsed.items.length) {
+          setData(parsed.items);
+          setTotalPages(parsed.total || 1);
+          setIsLoading(false);
         }
-      }
-    } catch (_) {}
-  }, [categoryName, selectedCategoryDisplayName]);
+      } catch {}
+    }
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [categoryName]);
-
-  useEffect(() => {
-    fetchPostsForCategory(categoryName, currentPage);
+    fetchPostsForCategory(categoryName, currentPage, true);
   }, [categoryName, currentPage]);
 
-  const currentBlogs = data;
+  const currentBlogs = useMemo(() => data, [data]);
+  const preloadImage = useMemo(
+    () => currentBlogs[0]?.blogImg || null,
+    [currentBlogs]
+  );
 
   return (
     <div className="custom-blog-main-container container">
-      {!isLoading && currentBlogs[0] && (
+      {!isLoading && preloadImage && (
         <Helmet>
-          <link rel="preload" as="image" href={currentBlogs[0].blogImg} />
+          <link rel="preload" as="image" href={preloadImage} />
         </Helmet>
       )}
 
       <div className="row mt-4">
-        {isLoading ? (
+        {isLoading && currentBlogs.length === 0 ? (
           <div
             className="col-12"
             style={{ textAlign: "center", padding: "40px 0" }}
