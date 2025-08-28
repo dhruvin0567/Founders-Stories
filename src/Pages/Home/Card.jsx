@@ -11,6 +11,12 @@ const Card = () => {
 
   const blogsPerPage = 6;
 
+  const decodeHTML = (html) => {
+    const txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+  };
+
   const fetchingData = async () => {
     try {
       setIsFetching(true);
@@ -25,13 +31,16 @@ const Card = () => {
           item._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
           "https://via.placeholder.com/600x400",
         blogDate: new Date(item.date).toLocaleDateString(),
-        blogTitle: item.title.rendered,
-        blogDescription: item.excerpt.rendered.replace(/<[^>]+>/g, ""),
+        blogTitle: decodeHTML(item.title.rendered),
+        blogDescription: decodeHTML(
+          item.excerpt.rendered.replace(/<[^>]+>/g, "")
+        ),
         categories:
           item._embedded?.["wp:term"]?.[0]?.map((cat) => cat.name) || [],
       }));
 
       setData(mappedData);
+
       try {
         localStorage.setItem(
           "fs_posts_cache_v1",

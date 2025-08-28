@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 const SingleBlogTemplateTwo = ({
   blogTitle,
@@ -97,9 +98,9 @@ const SingleBlogTemplateTwo = ({
               <strong className="me-2">Categories: </strong>
               {categories.map((cat, index) => (
                 <React.Fragment key={cat.id}>
-                  <a href={cat.link} rel="category tag" className="me-2">
+                  <Link to={`/category/${cat.slug}`} className="me-2">
                     <span>{cat.name}</span>
-                  </a>
+                  </Link>
                   {index < categories.length - 1 && ", "}
                 </React.Fragment>
               ))}

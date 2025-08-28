@@ -57,6 +57,7 @@ const SingleBlogTemplateWrapper = () => {
           ?.flat()
           ?.filter((t) => t.taxonomy === "category")
           ?.map((c) => ({
+            id: c.id,
             name: c.name,
             slug: c.slug,
           })) || [];
