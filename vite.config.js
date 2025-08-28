@@ -1,17 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import critical from "vite-plugin-critical";
+import { viteSingleFile } from "vite-plugin-singlefile";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    critical({
-      criticalUrl: "",
-      criticalBase: "./dist/",
-      criticalPages: [{ uri: "", template: "index.html" }],
-    }),
-  ],
+  plugins: [react(), viteSingleFile()],
   build: {
-    cssCodeSplit: true,
+    cssCodeSplit: false,
   },
 });
