@@ -14,7 +14,7 @@ const Contact = () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      // Send to Admin
+      //*** Send to Admin
       await emailjs.send(
         "service_jnrnp06",
         "template_824w0po",
@@ -29,7 +29,7 @@ const Contact = () => {
         "xXD66OwtNN0ehOvWz"
       );
 
-      // Send to User
+      //*** Send to User
       await emailjs.send(
         "service_205efna",
         "template_num0fab",

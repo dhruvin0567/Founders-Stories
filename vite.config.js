@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import critical from "vite-plugin-critical";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    critical({
+      criticalUrl: "",
+      criticalBase: "./dist/",
+      criticalPages: [{ uri: "", template: "index.html" }],
+    }),
+  ],
+  build: {
+    cssCodeSplit: true,
+  },
+});
