@@ -19,6 +19,10 @@ body {
   color: #000;
 }
 
+img {
+  height: auto !important;
+}
+
 p,
 h1,
 h2,

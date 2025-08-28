@@ -101,7 +101,7 @@ header.scrolled {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
 }
 .emoji {
-  height: 16px;
+  height: 16px !important;
 }
 
 main#content {
@@ -112,6 +112,7 @@ img.navbar-brand {
   width: 100% !important;
   max-width: 250px !important;
 }
+
 .header-btn {
   background-color: #000000 !important;
   padding: 12px 30px !important;
