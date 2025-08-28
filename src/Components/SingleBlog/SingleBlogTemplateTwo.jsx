@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-router-dom";
+import Contact from "../../Pages/Contact/Contact";
 
 const SingleBlogTemplateTwo = ({
   blogTitle,
@@ -108,6 +109,8 @@ const SingleBlogTemplateTwo = ({
           </div>
         </section>
       )}
+
+      <Contact />
     </>
   );
 };

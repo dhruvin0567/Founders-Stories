@@ -899,3 +899,20 @@ blockquote {
   width: auto !important;
   margin: 10px 0px !important;
 }
+
+/* contact css */
+.contact-page h1 {
+  font-weight: 800 !important;
+}
+
+.contact-form input.form-control,
+.contact-form select.form-control,
+.contact-form select,
+.contact-form .form-select {
+  height: 44px !important;
+}
+
+.custom-textarea {
+  height: 100px !important;
+  resize: none !important;
+}

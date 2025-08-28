@@ -111,7 +111,7 @@ const SingleBlogTemplateWrapper = () => {
   if (error) return <div>{error}</div>;
   if (!data)
     return (
-      <div className="text-center mt-5">
+      <div className="text-center mt-5 pt-5">
         <Loader />
       </div>
     );
