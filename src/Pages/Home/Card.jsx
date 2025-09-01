@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useCallback, useState } from "react";
+import { useEffect, useMemo, useCallback, useState } from "react";
 import BlogCard from "../../Components/BlogCard/BlogCard";
 import Pagination from "../../Components/Common/Pagination";
 import axios from "axios";
+import SEO from "../../Components/SEO/SEO";
 
 const Card = () => {
   const [data, setData] = useState([]);
@@ -121,6 +122,13 @@ const Card = () => {
 
   return (
     <div className="container custom-blog-main-container">
+      <SEO
+        title={"Founder Stories | All Articles"}
+        description={
+          "Explore inspiring stories and insights from founders around the world. Read out latest blog on entrepreneurship, startups, and innovation."
+        }
+      />
+
       {!selectedCategory && <h3 className="custom-main-title">All Articles</h3>}
 
       <div className="row">

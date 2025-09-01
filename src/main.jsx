@@ -12,8 +12,12 @@ import "aos/dist/aos.css";
 import "../src/assets/CSS/style.css";
 import "../src/assets/CSS/secondtemplate.css";
 
+import { HelmetProvider } from "react-helmet-async";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>
 );

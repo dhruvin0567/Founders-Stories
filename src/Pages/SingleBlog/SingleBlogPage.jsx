@@ -129,15 +129,17 @@ const SingleBlogTemplateWrapper = () => {
   }
 
   return (
-    <SingleBlogTemplate
-      blogTitle={data.blogTitle}
-      blogmainImage={data.blogImg}
-      blogImageDescription={data.blogDescription}
-      tabsData={data.tabsData}
-      authors={data.authors}
-      blogDescription={data.blogDescription}
-      categories={data.categories}
-    />
+    <>
+      <SingleBlogTemplate
+        blogTitle={data.blogTitle}
+        blogmainImage={data.blogImg}
+        blogImageDescription={data.blogDescription}
+        tabsData={data.tabsData}
+        authors={data.authors}
+        blogDescription={data.blogDescription}
+        categories={data.categories}
+      />
+    </>
   );
 };
 
