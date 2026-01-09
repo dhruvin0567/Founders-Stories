@@ -7,17 +7,20 @@ const Footer = () => {
     "https://docs.google.com/forms/d/e/1FAIpQLScuZXqjHCbrxu-rPmNFUopA_B-NS3YPqP_SIzTsjGXDwxyFCw/viewform";
 
   return (
-    <footer className="bg-light py-4 mt-5">
+    <footer
+      className="pb-4 pt-5 mt-5 "
+      style={{ borderTop: "1px solid #e5e7eb", backgroundColor: "#f6f6f6" }}
+    >
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 mb-4 mb-lg-0">
+          <div className="col-lg-5 col-md-12 mb-4 mb-lg-0">
             <h5 className="mb-3">Founder Stories</h5>
-            <p className="mb-3">
+            <p className="mb-3" style={{ maxWidth: "400px", width: "100%" }}>
               Sharing inspiring journeys of entrepreneurs and innovators who are
               changing the world through their vision and determination.
             </p>
           </div>
-          <div className="col-lg-4 mb-4 mb-lg-0">
+          <div className="col-lg-2 col-md-4 mb-4 mb-0 mb-sm-0">
             <h5 className="mb-3">Quick Links</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
@@ -26,13 +29,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/category/meet-up" className="text-decoration-none">
-                  Meet Ups
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/category/events" className="text-decoration-none">
-                  Events
+                <Link to="/collections" className="text-decoration-none">
+                  Collections
                 </Link>
               </li>
               <li>
@@ -47,7 +45,22 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-2 col-md-4 mb-4 mb-0 mb-sm-0">
+            <h5 className="mb-3">Categories</h5>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <Link to="/category/events" className="text-decoration-none">
+                  Events
+                </Link>
+              </li>
+              <li>
+                <Link to="/category/meet-up" className="text-decoration-none">
+                  Meet Up
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-4 mb-0 mb-sm-0">
             <h5 className="mb-3">Connect With Us</h5>
             <div className="d-flex gap-3 mb-3">
               <a
@@ -83,16 +96,19 @@ const Footer = () => {
         <hr className="my-4" />
         <div className="row">
           <div className="col-md-6 text-center text-md-start">
-            <p className="mb-0">
+            <p className="mb-0 fs-6 footer-links-shades">
               &copy; {currentYear} Founder Stories. All rights reserved.
             </p>
           </div>
           <div className="col-md-6 text-center text-md-end">
-            <p className="mb-0">
-              <Link to="/" className="text-decoration-none me-3">
+            <p className="mb-0 fs-6">
+              <Link
+                to="/"
+                className="text-decoration-none me-3 footer-links-shades"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/" className="text-decoration-none">
+              <Link to="/" className="text-decoration-none footer-links-shades">
                 Terms of Service
               </Link>
             </p>

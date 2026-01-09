@@ -40,8 +40,8 @@ const BlogCard = ({
       data-aos="fade-up"
       data-aos-offset="100"
       data-aos-delay={delay}
-      data-aos-duration="800"
-      data-aos-easing="ease-in-out"
+      data-aos-duration="600"
+      data-aos-easing="ease-out"
     >
       <div className="card border-0 custom-post-card h-100">
         {/* Blog Image Clickable */}
